@@ -1,0 +1,1602 @@
+[
+    {
+        "question_id": "DB001",
+        "subject": "DBMS",
+        "topic": "Introduction",
+        "difficulty": "Easy",
+        "question": "What is a DBMS?",
+        "ideal_answer": "A Database Management System (DBMS) is software that allows users to create, store, retrieve, update, and manage data efficiently while ensuring security, consistency, and integrity."
+    },
+    {
+        "question_id": "DB002",
+        "subject": "DBMS",
+        "topic": "Introduction",
+        "difficulty": "Easy",
+        "question": "What are the advantages of using a DBMS?",
+        "ideal_answer": "A DBMS provides data security, reduced redundancy, improved data consistency, backup and recovery, data sharing, concurrency control, and efficient data management."
+    },
+    {
+        "question_id": "DB003",
+        "subject": "DBMS",
+        "topic": "File System vs DBMS",
+        "difficulty": "Easy",
+        "question": "What is the difference between a file system and a DBMS?",
+        "ideal_answer": "A file system stores data in separate files with higher redundancy and lower security, whereas a DBMS organizes data systematically with reduced redundancy, better security, concurrency control, and data integrity."
+    },
+    {
+        "question_id": "DB004",
+        "subject": "DBMS",
+        "topic": "Database",
+        "difficulty": "Easy",
+        "question": "What is a database?",
+        "ideal_answer": "A database is an organized collection of related data that can be easily accessed, managed, and updated."
+    },
+    {
+        "question_id": "DB005",
+        "subject": "DBMS",
+        "topic": "Schema",
+        "difficulty": "Easy",
+        "question": "What is a database schema?",
+        "ideal_answer": "A database schema is the logical structure of a database that defines tables, attributes, relationships, and constraints."
+    },
+    {
+        "question_id": "DB006",
+        "subject": "DBMS",
+        "topic": "Instances",
+        "difficulty": "Easy",
+        "question": "What is the difference between a database schema and a database instance?",
+        "ideal_answer": "A schema is the overall design of the database, while an instance is the actual data stored in the database at a particular point in time."
+    },
+    {
+        "question_id": "DB007",
+        "subject": "DBMS",
+        "topic": "Three-Level Architecture",
+        "difficulty": "Medium",
+        "question": "Explain the three-level architecture of DBMS.",
+        "ideal_answer": "The three-level architecture consists of the external level (user view), conceptual level (logical structure), and internal level (physical storage), providing data abstraction and independence."
+    },
+    {
+        "question_id": "DB008",
+        "subject": "DBMS",
+        "topic": "Data Independence",
+        "difficulty": "Medium",
+        "question": "What is data independence?",
+        "ideal_answer": "Data independence is the ability to modify the schema at one level without affecting the schema at the next higher level. It includes logical and physical data independence."
+    },
+    {
+        "question_id": "DB009",
+        "subject": "DBMS",
+        "topic": "Database Languages",
+        "difficulty": "Medium",
+        "question": "What are DDL, DML, DCL, and TCL?",
+        "ideal_answer": "DDL defines database structure, DML manipulates data, DCL controls user permissions, and TCL manages transactions using commands like COMMIT and ROLLBACK."
+    },
+    {
+        "question_id": "DB010",
+        "subject": "DBMS",
+        "topic": "Database Users",
+        "difficulty": "Easy",
+        "question": "Who are the different types of database users?",
+        "ideal_answer": "Database users include database administrators (DBA), application programmers, end users, system analysts, and database designers."
+    },
+    {
+        "question_id": "DB011",
+        "subject": "DBMS",
+        "topic": "ER Model",
+        "difficulty": "Easy",
+        "question": "What is an Entity in the ER model?",
+        "ideal_answer": "An entity is a real-world object or concept that can be uniquely identified and about which data is stored in a database."
+    },
+    {
+        "question_id": "DB012",
+        "subject": "DBMS",
+        "topic": "ER Model",
+        "difficulty": "Easy",
+        "question": "What is an attribute in the ER model?",
+        "ideal_answer": "An attribute is a property or characteristic of an entity. For example, StudentID and Name are attributes of a Student entity."
+    },
+    {
+        "question_id": "DB013",
+        "subject": "DBMS",
+        "topic": "ER Model",
+        "difficulty": "Easy",
+        "question": "What is a relationship in the ER model?",
+        "ideal_answer": "A relationship represents an association between two or more entities, such as a Student enrolling in a Course."
+    },
+    {
+        "question_id": "DB014",
+        "subject": "DBMS",
+        "topic": "Keys",
+        "difficulty": "Easy",
+        "question": "What is a primary key?",
+        "ideal_answer": "A primary key is a column or set of columns that uniquely identifies each record in a table. It cannot contain NULL values or duplicate values."
+    },
+    {
+        "question_id": "DB015",
+        "subject": "DBMS",
+        "topic": "Keys",
+        "difficulty": "Easy",
+        "question": "What is a foreign key?",
+        "ideal_answer": "A foreign key is a column that establishes a relationship between two tables by referring to the primary key of another table."
+    },
+    {
+        "question_id": "DB016",
+        "subject": "DBMS",
+        "topic": "Keys",
+        "difficulty": "Medium",
+        "question": "What is the difference between a primary key and a foreign key?",
+        "ideal_answer": "A primary key uniquely identifies records in its own table, whereas a foreign key references the primary key of another table to establish relationships."
+    },
+    {
+        "question_id": "DB017",
+        "subject": "DBMS",
+        "topic": "Keys",
+        "difficulty": "Medium",
+        "question": "What is a candidate key?",
+        "ideal_answer": "A candidate key is a minimal set of attributes that can uniquely identify each record in a table. One candidate key is selected as the primary key."
+    },
+    {
+        "question_id": "DB018",
+        "subject": "DBMS",
+        "topic": "Keys",
+        "difficulty": "Medium",
+        "question": "What is a composite key?",
+        "ideal_answer": "A composite key is a key formed by combining two or more columns to uniquely identify a record in a table."
+    },
+    {
+        "question_id": "DB019",
+        "subject": "DBMS",
+        "topic": "Constraints",
+        "difficulty": "Medium",
+        "question": "What are constraints in DBMS?",
+        "ideal_answer": "Constraints are rules applied to database tables to maintain data accuracy and integrity. Common constraints include PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK, and DEFAULT."
+    },
+    {
+        "question_id": "DB020",
+        "subject": "DBMS",
+        "topic": "Relationships",
+        "difficulty": "Medium",
+        "question": "What are the different types of relationships in DBMS?",
+        "ideal_answer": "The main types of relationships are one-to-one, one-to-many, many-to-one, and many-to-many."
+    },
+    {
+        "question_id": "DB021",
+        "subject": "DBMS",
+        "topic": "Functional Dependency",
+        "difficulty": "Medium",
+        "question": "What is a functional dependency?",
+        "ideal_answer": "A functional dependency is a relationship between two attributes in which one attribute uniquely determines another. It is represented as X → Y."
+    },
+    {
+        "question_id": "DB022",
+        "subject": "DBMS",
+        "topic": "Functional Dependency",
+        "difficulty": "Medium",
+        "question": "What is a trivial functional dependency?",
+        "ideal_answer": "A functional dependency is trivial if the dependent attribute is a subset of the determinant. For example, {A, B} → A."
+    },
+    {
+        "question_id": "DB023",
+        "subject": "DBMS",
+        "topic": "Functional Dependency",
+        "difficulty": "Medium",
+        "question": "What is a non-trivial functional dependency?",
+        "ideal_answer": "A functional dependency is non-trivial if the dependent attribute is not a subset of the determinant. For example, StudentID → StudentName."
+    },
+    {
+        "question_id": "DB024",
+        "subject": "DBMS",
+        "topic": "Normalization",
+        "difficulty": "Easy",
+        "question": "What is normalization?",
+        "ideal_answer": "Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity by dividing tables into smaller related tables."
+    },
+    {
+        "question_id": "DB025",
+        "subject": "DBMS",
+        "topic": "Normalization",
+        "difficulty": "Easy",
+        "question": "Why is normalization important?",
+        "ideal_answer": "Normalization reduces data redundancy, prevents update anomalies, improves consistency, and enhances database efficiency."
+    },
+    {
+        "question_id": "DB026",
+        "subject": "DBMS",
+        "topic": "First Normal Form",
+        "difficulty": "Medium",
+        "question": "What is the First Normal Form (1NF)?",
+        "ideal_answer": "A table is in First Normal Form if each column contains atomic values, there are no repeating groups, and each record is unique."
+    },
+    {
+        "question_id": "DB027",
+        "subject": "DBMS",
+        "topic": "Second Normal Form",
+        "difficulty": "Medium",
+        "question": "What is the Second Normal Form (2NF)?",
+        "ideal_answer": "A table is in Second Normal Form if it is already in 1NF and every non-key attribute is fully functionally dependent on the entire primary key."
+    },
+    {
+        "question_id": "DB028",
+        "subject": "DBMS",
+        "topic": "Third Normal Form",
+        "difficulty": "Medium",
+        "question": "What is the Third Normal Form (3NF)?",
+        "ideal_answer": "A table is in Third Normal Form if it is already in 2NF and contains no transitive dependencies between non-key attributes."
+    },
+    {
+        "question_id": "DB029",
+        "subject": "DBMS",
+        "topic": "BCNF",
+        "difficulty": "Hard",
+        "question": "What is Boyce-Codd Normal Form (BCNF)?",
+        "ideal_answer": "A table is in BCNF if it is in 3NF and every determinant is a candidate key, eliminating certain anomalies not handled by 3NF."
+    },
+    {
+        "question_id": "DB030",
+        "subject": "DBMS",
+        "topic": "Denormalization",
+        "difficulty": "Hard",
+        "question": "What is denormalization and when is it used?",
+        "ideal_answer": "Denormalization is the process of combining normalized tables to improve query performance. It is used in read-intensive applications where faster retrieval is more important than minimizing redundancy."
+    },
+    {
+        "question_id": "DB031",
+        "subject": "DBMS",
+        "topic": "Transactions",
+        "difficulty": "Easy",
+        "question": "What is a transaction in DBMS?",
+        "ideal_answer": "A transaction is a sequence of one or more database operations executed as a single logical unit of work. It either completes entirely or is rolled back if an error occurs."
+    },
+    {
+        "question_id": "DB032",
+        "subject": "DBMS",
+        "topic": "ACID Properties",
+        "difficulty": "Medium",
+        "question": "What are the ACID properties of a transaction?",
+        "ideal_answer": "ACID stands for Atomicity, Consistency, Isolation, and Durability. These properties ensure reliable and consistent execution of database transactions."
+    },
+    {
+        "question_id": "DB033",
+        "subject": "DBMS",
+        "topic": "Atomicity",
+        "difficulty": "Medium",
+        "question": "What is Atomicity in DBMS?",
+        "ideal_answer": "Atomicity ensures that all operations in a transaction are completed successfully. If any operation fails, the entire transaction is rolled back."
+    },
+    {
+        "question_id": "DB034",
+        "subject": "DBMS",
+        "topic": "Consistency",
+        "difficulty": "Medium",
+        "question": "What is Consistency in DBMS?",
+        "ideal_answer": "Consistency ensures that a transaction brings the database from one valid state to another while maintaining all integrity constraints."
+    },
+    {
+        "question_id": "DB035",
+        "subject": "DBMS",
+        "topic": "Isolation",
+        "difficulty": "Medium",
+        "question": "What is Isolation in DBMS?",
+        "ideal_answer": "Isolation ensures that multiple transactions executing simultaneously do not interfere with each other and produce the same result as if executed sequentially."
+    },
+    {
+        "question_id": "DB036",
+        "subject": "DBMS",
+        "topic": "Durability",
+        "difficulty": "Medium",
+        "question": "What is Durability in DBMS?",
+        "ideal_answer": "Durability guarantees that once a transaction is committed, its changes are permanently stored even if a system failure occurs."
+    },
+    {
+        "question_id": "DB037",
+        "subject": "DBMS",
+        "topic": "Transaction Control",
+        "difficulty": "Medium",
+        "question": "What are COMMIT, ROLLBACK, and SAVEPOINT?",
+        "ideal_answer": "COMMIT permanently saves transaction changes, ROLLBACK undoes changes since the last commit, and SAVEPOINT creates a checkpoint within a transaction for partial rollback."
+    },
+    {
+        "question_id": "DB038",
+        "subject": "DBMS",
+        "topic": "Concurrency Control",
+        "difficulty": "Hard",
+        "question": "What is concurrency control in DBMS?",
+        "ideal_answer": "Concurrency control is the process of managing simultaneous transactions to prevent conflicts and maintain database consistency."
+    },
+    {
+        "question_id": "DB039",
+        "subject": "DBMS",
+        "topic": "Concurrency Problems",
+        "difficulty": "Hard",
+        "question": "What is a dirty read in DBMS?",
+        "ideal_answer": "A dirty read occurs when a transaction reads data that has been modified by another transaction but has not yet been committed."
+    },
+    {
+        "question_id": "DB040",
+        "subject": "DBMS",
+        "topic": "Concurrency Problems",
+        "difficulty": "Hard",
+        "question": "What is the lost update problem?",
+        "ideal_answer": "The lost update problem occurs when two transactions update the same data simultaneously and one update overwrites the other, causing data loss."
+    },
+    {
+        "question_id": "DB041",
+        "subject": "DBMS",
+        "topic": "Locking",
+        "difficulty": "Hard",
+        "question": "What is locking in DBMS?",
+        "ideal_answer": "Locking is a concurrency control mechanism that restricts simultaneous access to database resources, preventing data inconsistency when multiple transactions execute concurrently."
+    },
+    {
+        "question_id": "DB042",
+        "subject": "DBMS",
+        "topic": "Two-Phase Locking",
+        "difficulty": "Hard",
+        "question": "What is the Two-Phase Locking (2PL) protocol?",
+        "ideal_answer": "Two-Phase Locking is a concurrency control protocol consisting of a growing phase where locks are acquired and a shrinking phase where locks are released, ensuring serializability."
+    },
+    {
+        "question_id": "DB043",
+        "subject": "DBMS",
+        "topic": "Deadlock",
+        "difficulty": "Hard",
+        "question": "What is a deadlock in DBMS?",
+        "ideal_answer": "A deadlock occurs when two or more transactions wait indefinitely for each other to release resources, preventing further execution."
+    },
+    {
+        "question_id": "DB044",
+        "subject": "DBMS",
+        "topic": "Starvation",
+        "difficulty": "Hard",
+        "question": "What is starvation in DBMS?",
+        "ideal_answer": "Starvation occurs when a transaction waits indefinitely because other transactions continuously receive higher priority and access to required resources."
+    },
+    {
+        "question_id": "DB045",
+        "subject": "DBMS",
+        "topic": "Indexing",
+        "difficulty": "Medium",
+        "question": "What is an index in DBMS?",
+        "ideal_answer": "An index is a data structure that improves the speed of data retrieval operations by providing quick access to rows in a table."
+    },
+    {
+        "question_id": "DB046",
+        "subject": "DBMS",
+        "topic": "Indexing",
+        "difficulty": "Hard",
+        "question": "What is the difference between clustered and non-clustered indexes?",
+        "ideal_answer": "A clustered index determines the physical order of data in a table, whereas a non-clustered index creates a separate structure that points to the actual data rows."
+    },
+    {
+        "question_id": "DB047",
+        "subject": "DBMS",
+        "topic": "Views",
+        "difficulty": "Medium",
+        "question": "What is a view in DBMS?",
+        "ideal_answer": "A view is a virtual table created from one or more tables using a SQL query. It does not store data itself but displays data from underlying tables."
+    },
+    {
+        "question_id": "DB048",
+        "subject": "DBMS",
+        "topic": "Stored Procedures",
+        "difficulty": "Medium",
+        "question": "What is a stored procedure?",
+        "ideal_answer": "A stored procedure is a precompiled collection of SQL statements stored in the database that can be executed repeatedly to perform specific tasks."
+    },
+    {
+        "question_id": "DB049",
+        "subject": "DBMS",
+        "topic": "Triggers",
+        "difficulty": "Medium",
+        "question": "What is a trigger in DBMS?",
+        "ideal_answer": "A trigger is a special type of stored procedure that automatically executes in response to database events such as INSERT, UPDATE, or DELETE."
+    },
+    {
+        "question_id": "DB050",
+        "subject": "DBMS",
+        "topic": "SQL Joins",
+        "difficulty": "Medium",
+        "question": "What are SQL joins and why are they used?",
+        "ideal_answer": "SQL joins are operations used to combine rows from two or more tables based on a related column. Common types include INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN."
+    },
+    {
+        "question_id": "OOP001",
+        "subject": "OOP",
+        "topic": "Introduction",
+        "difficulty": "Easy",
+        "question": "What is Object-Oriented Programming (OOP)?",
+        "ideal_answer": "Object-Oriented Programming (OOP) is a programming paradigm based on objects and classes. It focuses on organizing code using concepts such as encapsulation, inheritance, polymorphism, and abstraction."
+    },
+    {
+        "question_id": "OOP002",
+        "subject": "OOP",
+        "topic": "Class",
+        "difficulty": "Easy",
+        "question": "What is a class?",
+        "ideal_answer": "A class is a blueprint or template for creating objects. It defines the data members and member functions that objects of the class will have."
+    },
+    {
+        "question_id": "OOP003",
+        "subject": "OOP",
+        "topic": "Object",
+        "difficulty": "Easy",
+        "question": "What is an object?",
+        "ideal_answer": "An object is an instance of a class. It has its own state, behavior, and identity."
+    },
+    {
+        "question_id": "OOP004",
+        "subject": "OOP",
+        "topic": "Encapsulation",
+        "difficulty": "Medium",
+        "question": "What is encapsulation?",
+        "ideal_answer": "Encapsulation is the process of bundling data and methods into a single unit while restricting direct access to internal data using access modifiers."
+    },
+    {
+        "question_id": "OOP005",
+        "subject": "OOP",
+        "topic": "Abstraction",
+        "difficulty": "Medium",
+        "question": "What is abstraction?",
+        "ideal_answer": "Abstraction is the process of hiding implementation details and exposing only essential features to the user."
+    },
+    {
+        "question_id": "OOP006",
+        "subject": "OOP",
+        "topic": "Inheritance",
+        "difficulty": "Medium",
+        "question": "What is inheritance?",
+        "ideal_answer": "Inheritance is an OOP feature that allows one class to inherit the properties and methods of another class, promoting code reuse."
+    },
+    {
+        "question_id": "OOP007",
+        "subject": "OOP",
+        "topic": "Polymorphism",
+        "difficulty": "Medium",
+        "question": "What is polymorphism?",
+        "ideal_answer": "Polymorphism allows the same interface or method to perform different behaviors depending on the object or class."
+    },
+    {
+        "question_id": "OOP008",
+        "subject": "OOP",
+        "topic": "Constructor",
+        "difficulty": "Easy",
+        "question": "What is a constructor?",
+        "ideal_answer": "A constructor is a special method that is automatically called when an object is created. It is used to initialize object data."
+    },
+    {
+        "question_id": "OOP009",
+        "subject": "OOP",
+        "topic": "Destructor",
+        "difficulty": "Medium",
+        "question": "What is a destructor?",
+        "ideal_answer": "A destructor is a special method that is automatically called when an object is destroyed. It is used to release resources occupied by the object."
+    },
+    {
+        "question_id": "OOP010",
+        "subject": "OOP",
+        "topic": "Access Modifiers",
+        "difficulty": "Medium",
+        "question": "What are access modifiers in object-oriented programming?",
+        "ideal_answer": "Access modifiers control the visibility of class members. Common access modifiers are public, private, and protected."
+    },
+    {
+        "question_id": "OOP011",
+        "subject": "OOP",
+        "topic": "Method Overloading",
+        "difficulty": "Medium",
+        "question": "What is method overloading?",
+        "ideal_answer": "Method overloading is the process of defining multiple methods with the same name but different parameter lists in the same class. It is an example of compile-time polymorphism."
+    },
+    {
+        "question_id": "OOP012",
+        "subject": "OOP",
+        "topic": "Method Overriding",
+        "difficulty": "Medium",
+        "question": "What is method overriding?",
+        "ideal_answer": "Method overriding occurs when a subclass provides its own implementation of a method already defined in the parent class. It is an example of runtime polymorphism."
+    },
+    {
+        "question_id": "OOP013",
+        "subject": "OOP",
+        "topic": "Overloading vs Overriding",
+        "difficulty": "Medium",
+        "question": "What is the difference between method overloading and method overriding?",
+        "ideal_answer": "Method overloading occurs within the same class and differs by parameters, while method overriding occurs in inheritance where a child class redefines a parent class method."
+    },
+    {
+        "question_id": "OOP014",
+        "subject": "OOP",
+        "topic": "Static Keyword",
+        "difficulty": "Medium",
+        "question": "What is the static keyword in object-oriented programming?",
+        "ideal_answer": "The static keyword is used for members that belong to the class rather than individual objects. Static members are shared among all instances of the class."
+    },
+    {
+        "question_id": "OOP015",
+        "subject": "OOP",
+        "topic": "Final Keyword",
+        "difficulty": "Medium",
+        "question": "What is the purpose of the final keyword?",
+        "ideal_answer": "The final keyword is used to prevent modification. A final variable cannot be reassigned, a final method cannot be overridden, and a final class cannot be inherited."
+    },
+    {
+        "question_id": "OOP016",
+        "subject": "OOP",
+        "topic": "Abstract Class",
+        "difficulty": "Hard",
+        "question": "What is an abstract class?",
+        "ideal_answer": "An abstract class is a class that cannot be instantiated directly. It may contain both abstract methods and concrete methods and serves as a base class for subclasses."
+    },
+    {
+        "question_id": "OOP017",
+        "subject": "OOP",
+        "topic": "Interface",
+        "difficulty": "Hard",
+        "question": "What is an interface?",
+        "ideal_answer": "An interface is a contract that specifies methods a class must implement. It supports abstraction and enables multiple inheritance of behavior in languages such as Java."
+    },
+    {
+        "question_id": "OOP018",
+        "subject": "OOP",
+        "topic": "Abstract Class vs Interface",
+        "difficulty": "Hard",
+        "question": "What is the difference between an abstract class and an interface?",
+        "ideal_answer": "An abstract class can have both implemented and abstract methods along with instance variables, whereas an interface primarily defines a contract of methods that implementing classes must provide."
+    },
+    {
+        "question_id": "OOP019",
+        "subject": "OOP",
+        "topic": "Association",
+        "difficulty": "Medium",
+        "question": "What is association in object-oriented programming?",
+        "ideal_answer": "Association is a relationship between two independent objects where they can interact with each other without ownership."
+    },
+    {
+        "question_id": "OOP020",
+        "subject": "OOP",
+        "topic": "Aggregation",
+        "difficulty": "Hard",
+        "question": "What is aggregation in object-oriented programming?",
+        "ideal_answer": "Aggregation is a weak 'has-a' relationship where one object contains another object, but the contained object can exist independently of the container."
+    },
+    {
+        "question_id": "OOP021",
+        "subject": "OOP",
+        "topic": "Composition",
+        "difficulty": "Hard",
+        "question": "What is composition in object-oriented programming?",
+        "ideal_answer": "Composition is a strong 'has-a' relationship where one object owns another object, and the contained object's lifecycle depends on the container object."
+    },
+    {
+        "question_id": "OOP022",
+        "subject": "OOP",
+        "topic": "Aggregation vs Composition",
+        "difficulty": "Hard",
+        "question": "What is the difference between aggregation and composition?",
+        "ideal_answer": "Aggregation is a weak relationship where the contained object can exist independently, whereas composition is a strong relationship where the contained object's lifecycle depends on the parent object."
+    },
+    {
+        "question_id": "OOP023",
+        "subject": "OOP",
+        "topic": "Dynamic Binding",
+        "difficulty": "Hard",
+        "question": "What is dynamic binding?",
+        "ideal_answer": "Dynamic binding is the process of resolving method calls at runtime rather than compile time. It is used in method overriding and runtime polymorphism."
+    },
+    {
+        "question_id": "OOP024",
+        "subject": "OOP",
+        "topic": "Polymorphism",
+        "difficulty": "Medium",
+        "question": "What is the difference between compile-time and runtime polymorphism?",
+        "ideal_answer": "Compile-time polymorphism is achieved through method overloading and is resolved during compilation, whereas runtime polymorphism is achieved through method overriding and is resolved during program execution."
+    },
+    {
+        "question_id": "OOP025",
+        "subject": "OOP",
+        "topic": "this Keyword",
+        "difficulty": "Medium",
+        "question": "What is the purpose of the 'this' keyword?",
+        "ideal_answer": "The 'this' keyword refers to the current object of a class. It is used to access instance variables, invoke constructors, and distinguish between instance variables and method parameters."
+    },
+    {
+        "question_id": "OOP026",
+        "subject": "OOP",
+        "topic": "super Keyword",
+        "difficulty": "Medium",
+        "question": "What is the purpose of the 'super' keyword?",
+        "ideal_answer": "The 'super' keyword refers to the immediate parent class. It is used to access parent class methods, variables, and constructors."
+    },
+    {
+        "question_id": "OOP027",
+        "subject": "OOP",
+        "topic": "Upcasting and Downcasting",
+        "difficulty": "Hard",
+        "question": "What are upcasting and downcasting?",
+        "ideal_answer": "Upcasting is converting a child class object to a parent class reference, while downcasting converts a parent class reference back to a child class reference."
+    },
+    {
+        "question_id": "OOP028",
+        "subject": "OOP",
+        "topic": "Object Cloning",
+        "difficulty": "Hard",
+        "question": "What is object cloning?",
+        "ideal_answer": "Object cloning is the process of creating an exact copy of an existing object. In Java, it is commonly implemented using the Cloneable interface and clone() method."
+    },
+    {
+        "question_id": "OOP029",
+        "subject": "OOP",
+        "topic": "SOLID Principles",
+        "difficulty": "Hard",
+        "question": "What are the SOLID principles in object-oriented programming?",
+        "ideal_answer": "SOLID is a set of five object-oriented design principles: Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion. They help create maintainable and scalable software."
+    },
+    {
+        "question_id": "OOP030",
+        "subject": "OOP",
+        "topic": "OOP vs Procedural Programming",
+        "difficulty": "Medium",
+        "question": "What is the difference between object-oriented programming and procedural programming?",
+        "ideal_answer": "Object-oriented programming organizes code around objects and classes with features like inheritance and polymorphism, whereas procedural programming organizes code around functions and procedures with a step-by-step approach."
+    },
+    {
+        "question_id": "OS001",
+        "subject": "Operating Systems",
+        "topic": "Introduction",
+        "difficulty": "Easy",
+        "question": "What is an operating system?",
+        "ideal_answer": "An operating system is system software that manages computer hardware and software resources while providing services for application programs."
+    },
+    {
+        "question_id": "OS002",
+        "subject": "Operating Systems",
+        "topic": "Functions of OS",
+        "difficulty": "Easy",
+        "question": "What are the main functions of an operating system?",
+        "ideal_answer": "The main functions of an operating system include process management, memory management, file management, device management, security, and providing a user interface."
+    },
+    {
+        "question_id": "OS003",
+        "subject": "Operating Systems",
+        "topic": "Types of Operating Systems",
+        "difficulty": "Easy",
+        "question": "What are the different types of operating systems?",
+        "ideal_answer": "Common types of operating systems include batch operating systems, time-sharing operating systems, distributed operating systems, real-time operating systems, network operating systems, and mobile operating systems."
+    },
+    {
+        "question_id": "OS004",
+        "subject": "Operating Systems",
+        "topic": "Kernel",
+        "difficulty": "Medium",
+        "question": "What is the kernel in an operating system?",
+        "ideal_answer": "The kernel is the core component of an operating system that manages hardware resources, memory, CPU scheduling, devices, and communication between hardware and software."
+    },
+    {
+        "question_id": "OS005",
+        "subject": "Operating Systems",
+        "topic": "Shell",
+        "difficulty": "Easy",
+        "question": "What is a shell in an operating system?",
+        "ideal_answer": "A shell is a command interpreter that allows users to interact with the operating system by executing commands and running programs."
+    },
+    {
+        "question_id": "OS006",
+        "subject": "Operating Systems",
+        "topic": "System Calls",
+        "difficulty": "Medium",
+        "question": "What are system calls?",
+        "ideal_answer": "System calls are interfaces through which user programs request services from the operating system kernel, such as file operations, process creation, and memory management."
+    },
+    {
+        "question_id": "OS007",
+        "subject": "Operating Systems",
+        "topic": "Program vs Process",
+        "difficulty": "Medium",
+        "question": "What is the difference between a program and a process?",
+        "ideal_answer": "A program is a passive set of instructions stored on disk, whereas a process is an active instance of a program currently being executed."
+    },
+    {
+        "question_id": "OS008",
+        "subject": "Operating Systems",
+        "topic": "Process Control Block",
+        "difficulty": "Medium",
+        "question": "What is a Process Control Block (PCB)?",
+        "ideal_answer": "A Process Control Block is a data structure maintained by the operating system that stores information about a process, including its state, process ID, registers, scheduling information, and memory details."
+    },
+    {
+        "question_id": "OS009",
+        "subject": "Operating Systems",
+        "topic": "Multiprogramming",
+        "difficulty": "Medium",
+        "question": "What is multiprogramming?",
+        "ideal_answer": "Multiprogramming is a technique where multiple programs are kept in memory simultaneously so that the CPU can switch between them, improving CPU utilization."
+    },
+    {
+        "question_id": "OS010",
+        "subject": "Operating Systems",
+        "topic": "Multitasking",
+        "difficulty": "Medium",
+        "question": "What is multitasking?",
+        "ideal_answer": "Multitasking is the ability of an operating system to execute multiple tasks or processes apparently at the same time by rapidly switching the CPU between them."
+    },
+    {
+        "question_id": "OS011",
+        "subject": "Operating Systems",
+        "topic": "Process States",
+        "difficulty": "Medium",
+        "question": "What are the different states of a process?",
+        "ideal_answer": "A process typically passes through New, Ready, Running, Waiting (Blocked), and Terminated states during its execution."
+    },
+    {
+        "question_id": "OS012",
+        "subject": "Operating Systems",
+        "topic": "Process Scheduling",
+        "difficulty": "Medium",
+        "question": "What is process scheduling?",
+        "ideal_answer": "Process scheduling is the mechanism used by the operating system to determine which process should execute next on the CPU."
+    },
+    {
+        "question_id": "OS013",
+        "subject": "Operating Systems",
+        "topic": "FCFS Scheduling",
+        "difficulty": "Easy",
+        "question": "What is First Come First Serve (FCFS) scheduling?",
+        "ideal_answer": "FCFS is a non-preemptive scheduling algorithm in which the process that arrives first is executed first."
+    },
+    {
+        "question_id": "OS014",
+        "subject": "Operating Systems",
+        "topic": "Shortest Job First",
+        "difficulty": "Medium",
+        "question": "What is Shortest Job First (SJF) scheduling?",
+        "ideal_answer": "SJF is a scheduling algorithm that selects the process with the smallest execution time, reducing average waiting time."
+    },
+    {
+        "question_id": "OS015",
+        "subject": "Operating Systems",
+        "topic": "Round Robin",
+        "difficulty": "Medium",
+        "question": "What is Round Robin scheduling?",
+        "ideal_answer": "Round Robin is a preemptive scheduling algorithm where each process receives a fixed time slice (time quantum) before the CPU switches to the next process."
+    },
+    {
+        "question_id": "OS016",
+        "subject": "Operating Systems",
+        "topic": "Priority Scheduling",
+        "difficulty": "Medium",
+        "question": "What is Priority Scheduling?",
+        "ideal_answer": "Priority Scheduling executes processes based on their priority values. Higher-priority processes are executed before lower-priority ones."
+    },
+    {
+        "question_id": "OS017",
+        "subject": "Operating Systems",
+        "topic": "Threads",
+        "difficulty": "Medium",
+        "question": "What is a thread?",
+        "ideal_answer": "A thread is the smallest unit of execution within a process. Multiple threads of the same process share memory and resources."
+    },
+    {
+        "question_id": "OS018",
+        "subject": "Operating Systems",
+        "topic": "Context Switching",
+        "difficulty": "Hard",
+        "question": "What is context switching?",
+        "ideal_answer": "Context switching is the process of saving the state of one running process or thread and restoring the state of another so the CPU can switch execution."
+    },
+    {
+        "question_id": "OS019",
+        "subject": "Operating Systems",
+        "topic": "Critical Section",
+        "difficulty": "Hard",
+        "question": "What is a critical section?",
+        "ideal_answer": "A critical section is a part of a program where shared resources are accessed. Only one process or thread should execute it at a time to prevent race conditions."
+    },
+    {
+        "question_id": "OS020",
+        "subject": "Operating Systems",
+        "topic": "Process Synchronization",
+        "difficulty": "Hard",
+        "question": "Why is process synchronization necessary?",
+        "ideal_answer": "Process synchronization ensures that multiple processes or threads access shared resources safely, preventing race conditions, inconsistent data, and resource conflicts."
+    },
+    {
+        "question_id": "OS021",
+        "subject": "Operating Systems",
+        "topic": "Memory Management",
+        "difficulty": "Medium",
+        "question": "What is memory management in an operating system?",
+        "ideal_answer": "Memory management is the function of an operating system that allocates, tracks, and deallocates memory efficiently among processes while ensuring protection and optimal utilization."
+    },
+    {
+        "question_id": "OS022",
+        "subject": "Operating Systems",
+        "topic": "Paging",
+        "difficulty": "Medium",
+        "question": "What is paging?",
+        "ideal_answer": "Paging is a memory management technique in which logical memory is divided into fixed-size pages and physical memory into frames, eliminating external fragmentation."
+    },
+    {
+        "question_id": "OS023",
+        "subject": "Operating Systems",
+        "topic": "Segmentation",
+        "difficulty": "Medium",
+        "question": "What is segmentation?",
+        "ideal_answer": "Segmentation is a memory management technique that divides memory into variable-sized logical segments such as code, data, and stack based on program structure."
+    },
+    {
+        "question_id": "OS024",
+        "subject": "Operating Systems",
+        "topic": "Virtual Memory",
+        "difficulty": "Hard",
+        "question": "What is virtual memory?",
+        "ideal_answer": "Virtual memory is a memory management technique that uses secondary storage to extend RAM, allowing programs larger than physical memory to execute efficiently."
+    },
+    {
+        "question_id": "OS025",
+        "subject": "Operating Systems",
+        "topic": "Thrashing",
+        "difficulty": "Hard",
+        "question": "What is thrashing in an operating system?",
+        "ideal_answer": "Thrashing occurs when the operating system spends more time swapping pages between RAM and disk than executing processes, causing severe performance degradation."
+    },
+    {
+        "question_id": "OS026",
+        "subject": "Operating Systems",
+        "topic": "Cache Memory",
+        "difficulty": "Medium",
+        "question": "What is cache memory?",
+        "ideal_answer": "Cache memory is a small, high-speed memory located close to the CPU that stores frequently accessed data and instructions to reduce access time."
+    },
+    {
+        "question_id": "OS027",
+        "subject": "Operating Systems",
+        "topic": "File Systems",
+        "difficulty": "Medium",
+        "question": "What is a file system?",
+        "ideal_answer": "A file system is the method used by an operating system to organize, store, retrieve, and manage files on storage devices."
+    },
+    {
+        "question_id": "OS028",
+        "subject": "Operating Systems",
+        "topic": "Disk Scheduling",
+        "difficulty": "Hard",
+        "question": "Why is disk scheduling required?",
+        "ideal_answer": "Disk scheduling optimizes the order of disk access requests to reduce seek time, improve throughput, and enhance overall system performance."
+    },
+    {
+        "question_id": "OS029",
+        "subject": "Operating Systems",
+        "topic": "Booting Process",
+        "difficulty": "Medium",
+        "question": "What is the booting process?",
+        "ideal_answer": "Booting is the process of starting a computer by loading the operating system from storage into main memory so it can begin execution."
+    },
+    {
+        "question_id": "OS030",
+        "subject": "Operating Systems",
+        "topic": "Linux vs Windows",
+        "difficulty": "Medium",
+        "question": "What are the major differences between Linux and Windows operating systems?",
+        "ideal_answer": "Linux is open-source, highly customizable, and widely used for servers and development, whereas Windows is proprietary, user-friendly, and commonly used on personal computers."
+    },
+    {
+        "question_id": "PY001",
+        "subject": "Python",
+        "topic": "Basics",
+        "difficulty": "Easy",
+        "question": "What is Python?",
+        "ideal_answer": "Python is a high-level, interpreted, object-oriented programming language known for its simple syntax and extensive libraries. It is widely used for web development, machine learning, automation, scripting, and data analysis."
+    },
+    {
+        "question_id": "PY002",
+        "subject": "Python",
+        "topic": "Basics",
+        "difficulty": "Easy",
+        "question": "What are the main features of Python?",
+        "ideal_answer": "Python is easy to learn, interpreted, dynamically typed, platform-independent, object-oriented, open source, and has a large standard library."
+    },
+    {
+        "question_id": "PY003",
+        "subject": "Python",
+        "topic": "Variables",
+        "difficulty": "Easy",
+        "question": "What is a variable in Python?",
+        "ideal_answer": "A variable is a name used to store data in memory. Python automatically determines the data type based on the assigned value."
+    },
+    {
+        "question_id": "PY004",
+        "subject": "Python",
+        "topic": "Data Types",
+        "difficulty": "Easy",
+        "question": "Name the built-in data types in Python.",
+        "ideal_answer": "Python provides int, float, complex, bool, str, list, tuple, set, dict, bytes, bytearray, frozenset and NoneType."
+    },
+    {
+        "question_id": "PY005",
+        "subject": "Python",
+        "topic": "Operators",
+        "difficulty": "Easy",
+        "question": "What is the difference between = and == in Python?",
+        "ideal_answer": "The '=' operator assigns a value to a variable, whereas '==' compares two values and returns True if they are equal."
+    },
+    {
+        "question_id": "PY006",
+        "subject": "Python",
+        "topic": "Conditional Statements",
+        "difficulty": "Easy",
+        "question": "Explain the use of if-elif-else statements.",
+        "ideal_answer": "The if-elif-else structure is used for decision making. It executes different blocks of code depending on whether specified conditions evaluate to True or False."
+    },
+    {
+        "question_id": "PY007",
+        "subject": "Python",
+        "topic": "Loops",
+        "difficulty": "Easy",
+        "question": "What is the difference between for and while loops?",
+        "ideal_answer": "A for loop iterates over a sequence or iterable, while a while loop continues executing as long as a given condition remains True."
+    },
+    {
+        "question_id": "PY008",
+        "subject": "Python",
+        "topic": "Functions",
+        "difficulty": "Easy",
+        "question": "What is a function in Python?",
+        "ideal_answer": "A function is a reusable block of code that performs a specific task. Functions help improve code readability and reduce repetition."
+    },
+    {
+        "question_id": "PY009",
+        "subject": "Python",
+        "topic": "Strings",
+        "difficulty": "Easy",
+        "question": "What is a string in Python?",
+        "ideal_answer": "A string is a sequence of Unicode characters enclosed in single, double, or triple quotes. Strings are immutable in Python."
+    },
+    {
+        "question_id": "PY010",
+        "subject": "Python",
+        "topic": "Lists",
+        "difficulty": "Easy",
+        "question": "What is a list in Python?",
+        "ideal_answer": "A list is an ordered, mutable collection that can store elements of different data types. Lists are created using square brackets."
+    },
+    {
+        "question_id": "PY011",
+        "subject": "Python",
+        "topic": "Tuples",
+        "difficulty": "Easy",
+        "question": "What is a tuple in Python?",
+        "ideal_answer": "A tuple is an ordered and immutable collection of elements. It is created using parentheses and can store different data types."
+    },
+    {
+        "question_id": "PY012",
+        "subject": "Python",
+        "topic": "Sets",
+        "difficulty": "Easy",
+        "question": "What is a set in Python?",
+        "ideal_answer": "A set is an unordered collection of unique elements. It does not allow duplicate values and is created using curly braces or the set() function."
+    },
+    {
+        "question_id": "PY013",
+        "subject": "Python",
+        "topic": "Dictionary",
+        "difficulty": "Easy",
+        "question": "What is a dictionary in Python?",
+        "ideal_answer": "A dictionary is a mutable collection of key-value pairs. Each key must be unique, and values are accessed using their corresponding keys."
+    },
+    {
+        "question_id": "PY014",
+        "subject": "Python",
+        "topic": "Functions",
+        "difficulty": "Medium",
+        "question": "What is the difference between parameters and arguments?",
+        "ideal_answer": "Parameters are variables defined in a function declaration, while arguments are the actual values passed to the function when it is called."
+    },
+    {
+        "question_id": "PY015",
+        "subject": "Python",
+        "topic": "Lambda Functions",
+        "difficulty": "Medium",
+        "question": "What is a lambda function in Python?",
+        "ideal_answer": "A lambda function is a small anonymous function defined using the lambda keyword. It can take multiple arguments but contains only one expression."
+    },
+    {
+        "question_id": "PY016",
+        "subject": "Python",
+        "topic": "List Comprehension",
+        "difficulty": "Medium",
+        "question": "What is list comprehension?",
+        "ideal_answer": "List comprehension is a concise way to create lists using a single line of code by combining loops and conditional statements."
+    },
+    {
+        "question_id": "PY017",
+        "subject": "Python",
+        "topic": "Modules",
+        "difficulty": "Medium",
+        "question": "What is a module in Python?",
+        "ideal_answer": "A module is a Python file containing functions, classes, and variables that can be imported and reused in other Python programs."
+    },
+    {
+        "question_id": "PY018",
+        "subject": "Python",
+        "topic": "Packages",
+        "difficulty": "Medium",
+        "question": "What is a package in Python?",
+        "ideal_answer": "A package is a collection of related Python modules organized in directories. It helps structure large projects and promotes code reusability."
+    },
+    {
+        "question_id": "PY019",
+        "subject": "Python",
+        "topic": "File Handling",
+        "difficulty": "Medium",
+        "question": "How do you open a file in Python?",
+        "ideal_answer": "A file can be opened using the open() function by specifying the file name and mode such as read, write, append, or binary."
+    },
+    {
+        "question_id": "PY020",
+        "subject": "Python",
+        "topic": "Exception Handling",
+        "difficulty": "Medium",
+        "question": "Why is exception handling used in Python?",
+        "ideal_answer": "Exception handling is used to handle runtime errors gracefully using try, except, else, and finally blocks, preventing the program from crashing."
+    },
+    {
+        "question_id": "PY021",
+        "subject": "Python",
+        "topic": "Exception Handling",
+        "difficulty": "Medium",
+        "question": "What is the difference between syntax errors and exceptions?",
+        "ideal_answer": "Syntax errors occur when Python code violates language rules and prevent execution, while exceptions are runtime errors that occur during program execution and can be handled using exception handling."
+    },
+    {
+        "question_id": "PY022",
+        "subject": "Python",
+        "topic": "Object-Oriented Programming",
+        "difficulty": "Medium",
+        "question": "What is a class in Python?",
+        "ideal_answer": "A class is a blueprint for creating objects. It defines attributes and methods that describe the behavior and properties of objects."
+    },
+    {
+        "question_id": "PY023",
+        "subject": "Python",
+        "topic": "Object-Oriented Programming",
+        "difficulty": "Medium",
+        "question": "What is an object in Python?",
+        "ideal_answer": "An object is an instance of a class. It contains its own data and can use the methods defined in its class."
+    },
+    {
+        "question_id": "PY024",
+        "subject": "Python",
+        "topic": "Object-Oriented Programming",
+        "difficulty": "Medium",
+        "question": "What is inheritance in Python?",
+        "ideal_answer": "Inheritance is an OOP concept where one class acquires the properties and methods of another class, promoting code reuse."
+    },
+    {
+        "question_id": "PY025",
+        "subject": "Python",
+        "topic": "Object-Oriented Programming",
+        "difficulty": "Medium",
+        "question": "What is polymorphism in Python?",
+        "ideal_answer": "Polymorphism allows the same method or interface to behave differently depending on the object or class that implements it."
+    },
+    {
+        "question_id": "PY026",
+        "subject": "Python",
+        "topic": "Object-Oriented Programming",
+        "difficulty": "Medium",
+        "question": "What is encapsulation in Python?",
+        "ideal_answer": "Encapsulation is the process of bundling data and methods inside a class while restricting direct access to some internal details."
+    },
+    {
+        "question_id": "PY027",
+        "subject": "Python",
+        "topic": "Object-Oriented Programming",
+        "difficulty": "Medium",
+        "question": "What is abstraction in Python?",
+        "ideal_answer": "Abstraction hides implementation details and exposes only essential features using abstract classes and methods."
+    },
+    {
+        "question_id": "PY028",
+        "subject": "Python",
+        "topic": "Constructors",
+        "difficulty": "Medium",
+        "question": "What is the purpose of the __init__() method?",
+        "ideal_answer": "The __init__() method is a constructor that is automatically called when an object is created. It initializes the object's attributes."
+    },
+    {
+        "question_id": "PY029",
+        "subject": "Python",
+        "topic": "Memory Management",
+        "difficulty": "Medium",
+        "question": "What is garbage collection in Python?",
+        "ideal_answer": "Garbage collection is the automatic process of freeing memory occupied by objects that are no longer in use."
+    },
+    {
+        "question_id": "PY030",
+        "subject": "Python",
+        "topic": "Virtual Environment",
+        "difficulty": "Medium",
+        "question": "Why are virtual environments used in Python?",
+        "ideal_answer": "Virtual environments create isolated Python environments for different projects, allowing separate dependency management without conflicts."
+    },
+    {
+        "question_id": "PY031",
+        "subject": "Python",
+        "topic": "Iterators",
+        "difficulty": "Hard",
+        "question": "What is an iterator in Python?",
+        "ideal_answer": "An iterator is an object that allows sequential traversal of elements. It implements the __iter__() and __next__() methods."
+    },
+    {
+        "question_id": "PY032",
+        "subject": "Python",
+        "topic": "Generators",
+        "difficulty": "Hard",
+        "question": "What is a generator in Python?",
+        "ideal_answer": "A generator is a special type of iterator created using the yield keyword. It generates values lazily, reducing memory usage."
+    },
+    {
+        "question_id": "PY033",
+        "subject": "Python",
+        "topic": "Decorators",
+        "difficulty": "Hard",
+        "question": "What is a decorator in Python?",
+        "ideal_answer": "A decorator is a function that modifies or extends the behavior of another function without changing its source code. It is applied using the @ syntax."
+    },
+    {
+        "question_id": "PY034",
+        "subject": "Python",
+        "topic": "*args and **kwargs",
+        "difficulty": "Hard",
+        "question": "What are *args and **kwargs in Python?",
+        "ideal_answer": "*args allows a function to accept a variable number of positional arguments, while **kwargs allows a variable number of keyword arguments."
+    },
+    {
+        "question_id": "PY035",
+        "subject": "Python",
+        "topic": "Map Function",
+        "difficulty": "Hard",
+        "question": "What is the purpose of the map() function?",
+        "ideal_answer": "The map() function applies a specified function to every item of an iterable and returns an iterator containing the results."
+    },
+    {
+        "question_id": "PY036",
+        "subject": "Python",
+        "topic": "Filter Function",
+        "difficulty": "Hard",
+        "question": "What is the filter() function used for?",
+        "ideal_answer": "The filter() function filters elements from an iterable based on a condition and returns only those elements that satisfy the condition."
+    },
+    {
+        "question_id": "PY037",
+        "subject": "Python",
+        "topic": "Reduce Function",
+        "difficulty": "Hard",
+        "question": "What is the reduce() function in Python?",
+        "ideal_answer": "The reduce() function applies a function cumulatively to the items of an iterable to produce a single result. It is available in the functools module."
+    },
+    {
+        "question_id": "PY038",
+        "subject": "Python",
+        "topic": "Multithreading",
+        "difficulty": "Hard",
+        "question": "What is multithreading in Python?",
+        "ideal_answer": "Multithreading is a technique that allows multiple threads to run concurrently within a single process, improving responsiveness for I/O-bound tasks."
+    },
+    {
+        "question_id": "PY039",
+        "subject": "Python",
+        "topic": "Multiprocessing",
+        "difficulty": "Hard",
+        "question": "What is multiprocessing in Python?",
+        "ideal_answer": "Multiprocessing allows multiple processes to run in parallel, enabling better utilization of multiple CPU cores for CPU-intensive tasks."
+    },
+    {
+        "question_id": "PY040",
+        "subject": "Python",
+        "topic": "GIL",
+        "difficulty": "Hard",
+        "question": "What is the Global Interpreter Lock (GIL) in Python?",
+        "ideal_answer": "The Global Interpreter Lock is a mechanism in CPython that allows only one thread to execute Python bytecode at a time, limiting true parallel execution of threads."
+    },
+    {
+        "question_id": "PY041",
+        "subject": "Python",
+        "topic": "Copying Objects",
+        "difficulty": "Hard",
+        "question": "What is the difference between shallow copy and deep copy in Python?",
+        "ideal_answer": "A shallow copy creates a new object but copies references to nested objects, while a deep copy recursively copies all nested objects, creating completely independent copies."
+    },
+    {
+        "question_id": "PY042",
+        "subject": "Python",
+        "topic": "Comparison Operators",
+        "difficulty": "Hard",
+        "question": "What is the difference between == and is in Python?",
+        "ideal_answer": "The == operator compares the values of two objects, whereas the is operator checks whether two variables refer to the same object in memory."
+    },
+    {
+        "question_id": "PY043",
+        "subject": "Python",
+        "topic": "Mutable and Immutable Objects",
+        "difficulty": "Hard",
+        "question": "What are mutable and immutable objects in Python?",
+        "ideal_answer": "Mutable objects can be modified after creation, such as lists and dictionaries, whereas immutable objects cannot be changed after creation, such as strings, tuples, and integers."
+    },
+    {
+        "question_id": "PY044",
+        "subject": "Python",
+        "topic": "Exception Handling",
+        "difficulty": "Hard",
+        "question": "What is the purpose of the finally block in exception handling?",
+        "ideal_answer": "The finally block contains code that always executes whether an exception occurs or not. It is commonly used for resource cleanup such as closing files or database connections."
+    },
+    {
+        "question_id": "PY045",
+        "subject": "Python",
+        "topic": "Memory Management",
+        "difficulty": "Hard",
+        "question": "How does Python manage memory?",
+        "ideal_answer": "Python manages memory automatically using reference counting and a garbage collector to reclaim memory occupied by unused objects."
+    },
+    {
+        "question_id": "PY046",
+        "subject": "Python",
+        "topic": "PEP 8",
+        "difficulty": "Medium",
+        "question": "What is PEP 8?",
+        "ideal_answer": "PEP 8 is the official Python style guide that provides coding conventions for writing clean, readable, and consistent Python code."
+    },
+    {
+        "question_id": "PY047",
+        "subject": "Python",
+        "topic": "Function Arguments",
+        "difficulty": "Hard",
+        "question": "How are arguments passed to functions in Python?",
+        "ideal_answer": "Python passes arguments using object references, often described as pass-by-object-reference or pass-by-assignment. The behavior depends on whether the object is mutable or immutable."
+    },
+    {
+        "question_id": "PY048",
+        "subject": "Python",
+        "topic": "Data Structures",
+        "difficulty": "Medium",
+        "question": "What is the difference between a list and a tuple?",
+        "ideal_answer": "Lists are mutable and can be modified after creation, while tuples are immutable and generally provide better performance and can be used as dictionary keys if they contain immutable elements."
+    },
+    {
+        "question_id": "PY049",
+        "subject": "Python",
+        "topic": "Python Applications",
+        "difficulty": "Easy",
+        "question": "What are some common applications of Python?",
+        "ideal_answer": "Python is widely used in web development, data science, artificial intelligence, machine learning, automation, scripting, cybersecurity, scientific computing, and software development."
+    },
+    {
+        "question_id": "PY050",
+        "subject": "Python",
+        "topic": "Advantages",
+        "difficulty": "Easy",
+        "question": "What are the main advantages of Python?",
+        "ideal_answer": "Python is easy to learn, has simple syntax, is platform-independent, supports object-oriented programming, has a large standard library, and offers a rich ecosystem of third-party packages."
+    },
+    {
+        "question_id": "SQL001",
+        "subject": "SQL",
+        "topic": "Introduction",
+        "difficulty": "Easy",
+        "question": "What is SQL?",
+        "ideal_answer": "SQL (Structured Query Language) is a standard language used to create, retrieve, update, delete, and manage data stored in relational databases."
+    },
+    {
+        "question_id": "SQL002",
+        "subject": "SQL",
+        "topic": "Commands",
+        "difficulty": "Easy",
+        "question": "What are the different types of SQL commands?",
+        "ideal_answer": "The main types of SQL commands are DDL (Data Definition Language), DML (Data Manipulation Language), DCL (Data Control Language), TCL (Transaction Control Language), and DQL (Data Query Language)."
+    },
+    {
+        "question_id": "SQL003",
+        "subject": "SQL",
+        "topic": "DDL",
+        "difficulty": "Easy",
+        "question": "What is DDL in SQL?",
+        "ideal_answer": "DDL stands for Data Definition Language. It is used to define and modify database structures using commands such as CREATE, ALTER, DROP, and TRUNCATE."
+    },
+    {
+        "question_id": "SQL004",
+        "subject": "SQL",
+        "topic": "DML",
+        "difficulty": "Easy",
+        "question": "What is DML in SQL?",
+        "ideal_answer": "DML stands for Data Manipulation Language. It is used to insert, update, delete, and retrieve data using commands like INSERT, UPDATE, DELETE, and SELECT."
+    },
+    {
+        "question_id": "SQL005",
+        "subject": "SQL",
+        "topic": "SELECT",
+        "difficulty": "Easy",
+        "question": "What is the purpose of the SELECT statement?",
+        "ideal_answer": "The SELECT statement is used to retrieve data from one or more tables in a database."
+    },
+    {
+        "question_id": "SQL006",
+        "subject": "SQL",
+        "topic": "WHERE Clause",
+        "difficulty": "Easy",
+        "question": "What is the WHERE clause used for?",
+        "ideal_answer": "The WHERE clause filters records based on specified conditions, allowing only matching rows to be returned."
+    },
+    {
+        "question_id": "SQL007",
+        "subject": "SQL",
+        "topic": "ORDER BY",
+        "difficulty": "Easy",
+        "question": "What is the ORDER BY clause?",
+        "ideal_answer": "The ORDER BY clause is used to sort query results in ascending (ASC) or descending (DESC) order based on one or more columns."
+    },
+    {
+        "question_id": "SQL008",
+        "subject": "SQL",
+        "topic": "DISTINCT",
+        "difficulty": "Easy",
+        "question": "What is the DISTINCT keyword used for?",
+        "ideal_answer": "The DISTINCT keyword removes duplicate values from the query result and returns only unique records."
+    },
+    {
+        "question_id": "SQL009",
+        "subject": "SQL",
+        "topic": "Operators",
+        "difficulty": "Easy",
+        "question": "What are comparison operators in SQL?",
+        "ideal_answer": "Comparison operators such as =, !=, <, >, <=, and >= are used to compare values in SQL conditions."
+    },
+    {
+        "question_id": "SQL010",
+        "subject": "SQL",
+        "topic": "LIKE",
+        "difficulty": "Easy",
+        "question": "What is the LIKE operator in SQL?",
+        "ideal_answer": "The LIKE operator is used for pattern matching in SQL queries, often with wildcard characters such as % and _."
+    },
+    {
+        "question_id": "SQL011",
+        "subject": "SQL",
+        "topic": "Aggregate Functions",
+        "difficulty": "Easy",
+        "question": "What are aggregate functions in SQL?",
+        "ideal_answer": "Aggregate functions perform calculations on a group of rows and return a single value. Common aggregate functions include COUNT(), SUM(), AVG(), MIN(), and MAX()."
+    },
+    {
+        "question_id": "SQL012",
+        "subject": "SQL",
+        "topic": "COUNT Function",
+        "difficulty": "Easy",
+        "question": "What is the COUNT() function in SQL?",
+        "ideal_answer": "The COUNT() function returns the total number of rows or non-NULL values that satisfy a specified condition."
+    },
+    {
+        "question_id": "SQL013",
+        "subject": "SQL",
+        "topic": "SUM Function",
+        "difficulty": "Easy",
+        "question": "What is the SUM() function used for?",
+        "ideal_answer": "The SUM() function calculates the total sum of values in a numeric column."
+    },
+    {
+        "question_id": "SQL014",
+        "subject": "SQL",
+        "topic": "AVG Function",
+        "difficulty": "Easy",
+        "question": "What is the AVG() function in SQL?",
+        "ideal_answer": "The AVG() function calculates the average value of a numeric column while ignoring NULL values."
+    },
+    {
+        "question_id": "SQL015",
+        "subject": "SQL",
+        "topic": "MIN and MAX",
+        "difficulty": "Easy",
+        "question": "What are the MIN() and MAX() functions?",
+        "ideal_answer": "MIN() returns the smallest value, while MAX() returns the largest value from a specified column."
+    },
+    {
+        "question_id": "SQL016",
+        "subject": "SQL",
+        "topic": "GROUP BY",
+        "difficulty": "Medium",
+        "question": "What is the GROUP BY clause?",
+        "ideal_answer": "The GROUP BY clause groups rows that have the same values in specified columns so that aggregate functions can be applied to each group."
+    },
+    {
+        "question_id": "SQL017",
+        "subject": "SQL",
+        "topic": "HAVING Clause",
+        "difficulty": "Medium",
+        "question": "What is the HAVING clause in SQL?",
+        "ideal_answer": "The HAVING clause filters grouped records after the GROUP BY operation, unlike the WHERE clause which filters rows before grouping."
+    },
+    {
+        "question_id": "SQL018",
+        "subject": "SQL",
+        "topic": "WHERE vs HAVING",
+        "difficulty": "Medium",
+        "question": "What is the difference between WHERE and HAVING?",
+        "ideal_answer": "WHERE filters individual rows before grouping, while HAVING filters groups after the GROUP BY clause has been applied."
+    },
+    {
+        "question_id": "SQL019",
+        "subject": "SQL",
+        "topic": "NULL Values",
+        "difficulty": "Medium",
+        "question": "How are NULL values handled in SQL?",
+        "ideal_answer": "NULL represents missing or unknown data. It is checked using IS NULL or IS NOT NULL because it cannot be compared using the equality operator."
+    },
+    {
+        "question_id": "SQL020",
+        "subject": "SQL",
+        "topic": "Aliases",
+        "difficulty": "Easy",
+        "question": "What is an alias in SQL?",
+        "ideal_answer": "An alias is a temporary name assigned to a table or column using the AS keyword to improve query readability."
+    },
+    {
+        "question_id": "SQL021",
+        "subject": "SQL",
+        "topic": "INNER JOIN",
+        "difficulty": "Medium",
+        "question": "What is an INNER JOIN in SQL?",
+        "ideal_answer": "An INNER JOIN returns only the rows that have matching values in both tables based on the specified join condition."
+    },
+    {
+        "question_id": "SQL022",
+        "subject": "SQL",
+        "topic": "LEFT JOIN",
+        "difficulty": "Medium",
+        "question": "What is a LEFT JOIN in SQL?",
+        "ideal_answer": "A LEFT JOIN returns all rows from the left table and the matching rows from the right table. If no match exists, NULL values are returned for the right table."
+    },
+    {
+        "question_id": "SQL023",
+        "subject": "SQL",
+        "topic": "RIGHT JOIN",
+        "difficulty": "Medium",
+        "question": "What is a RIGHT JOIN in SQL?",
+        "ideal_answer": "A RIGHT JOIN returns all rows from the right table and the matching rows from the left table. If no match exists, NULL values are returned for the left table."
+    },
+    {
+        "question_id": "SQL024",
+        "subject": "SQL",
+        "topic": "FULL OUTER JOIN",
+        "difficulty": "Hard",
+        "question": "What is a FULL OUTER JOIN in SQL?",
+        "ideal_answer": "A FULL OUTER JOIN returns all matching rows from both tables along with the unmatched rows from both tables, filling missing values with NULL."
+    },
+    {
+        "question_id": "SQL025",
+        "subject": "SQL",
+        "topic": "CROSS JOIN",
+        "difficulty": "Medium",
+        "question": "What is a CROSS JOIN in SQL?",
+        "ideal_answer": "A CROSS JOIN returns the Cartesian product of two tables, combining every row of the first table with every row of the second table."
+    },
+    {
+        "question_id": "SQL026",
+        "subject": "SQL",
+        "topic": "SELF JOIN",
+        "difficulty": "Hard",
+        "question": "What is a SELF JOIN in SQL?",
+        "ideal_answer": "A SELF JOIN joins a table with itself using aliases. It is commonly used to compare rows within the same table."
+    },
+    {
+        "question_id": "SQL027",
+        "subject": "SQL",
+        "topic": "Subqueries",
+        "difficulty": "Medium",
+        "question": "What is a subquery in SQL?",
+        "ideal_answer": "A subquery is a query written inside another SQL query. It is used to retrieve data that is required by the outer query."
+    },
+    {
+        "question_id": "SQL028",
+        "subject": "SQL",
+        "topic": "Correlated Subqueries",
+        "difficulty": "Hard",
+        "question": "What is a correlated subquery?",
+        "ideal_answer": "A correlated subquery depends on values from the outer query and is executed once for each row processed by the outer query."
+    },
+    {
+        "question_id": "SQL029",
+        "subject": "SQL",
+        "topic": "UNION",
+        "difficulty": "Medium",
+        "question": "What is the difference between UNION and UNION ALL?",
+        "ideal_answer": "UNION removes duplicate rows from the combined result, whereas UNION ALL includes all rows, including duplicates, making it generally faster."
+    },
+    {
+        "question_id": "SQL030",
+        "subject": "SQL",
+        "topic": "EXISTS vs IN",
+        "difficulty": "Hard",
+        "question": "What is the difference between EXISTS and IN in SQL?",
+        "ideal_answer": "EXISTS checks whether a subquery returns any rows and stops once a match is found, while IN compares a value against a list of values returned by a subquery."
+    },
+    {
+        "question_id": "SQL031",
+        "subject": "SQL",
+        "topic": "Views",
+        "difficulty": "Medium",
+        "question": "What is a view in SQL?",
+        "ideal_answer": "A view is a virtual table created from the result of a SQL query. It does not store data itself but displays data from one or more underlying tables."
+    },
+    {
+        "question_id": "SQL032",
+        "subject": "SQL",
+        "topic": "Indexes",
+        "difficulty": "Medium",
+        "question": "What is an index in SQL?",
+        "ideal_answer": "An index is a database object that improves the speed of data retrieval operations by creating a sorted structure on one or more columns."
+    },
+    {
+        "question_id": "SQL033",
+        "subject": "SQL",
+        "topic": "Primary Key vs Unique Key",
+        "difficulty": "Medium",
+        "question": "What is the difference between a PRIMARY KEY and a UNIQUE KEY?",
+        "ideal_answer": "A PRIMARY KEY uniquely identifies each row and cannot contain NULL values, whereas a UNIQUE KEY also enforces uniqueness but can allow NULL values depending on the database system."
+    },
+    {
+        "question_id": "SQL034",
+        "subject": "SQL",
+        "topic": "Stored Procedures",
+        "difficulty": "Medium",
+        "question": "What is a stored procedure?",
+        "ideal_answer": "A stored procedure is a precompiled collection of SQL statements stored in the database that can be executed repeatedly to perform specific tasks."
+    },
+    {
+        "question_id": "SQL035",
+        "subject": "SQL",
+        "topic": "Functions",
+        "difficulty": "Medium",
+        "question": "What is the difference between a stored procedure and a function?",
+        "ideal_answer": "A stored procedure performs operations and may or may not return a value, whereas a function always returns a value and can often be used within SQL queries."
+    },
+    {
+        "question_id": "SQL036",
+        "subject": "SQL",
+        "topic": "Triggers",
+        "difficulty": "Medium",
+        "question": "What is a trigger in SQL?",
+        "ideal_answer": "A trigger is a special database object that automatically executes in response to events such as INSERT, UPDATE, or DELETE."
+    },
+    {
+        "question_id": "SQL037",
+        "subject": "SQL",
+        "topic": "Transactions",
+        "difficulty": "Medium",
+        "question": "What is a transaction in SQL?",
+        "ideal_answer": "A transaction is a sequence of SQL operations executed as a single unit of work. It ensures that either all operations succeed or none of them are applied."
+    },
+    {
+        "question_id": "SQL038",
+        "subject": "SQL",
+        "topic": "Transaction Control",
+        "difficulty": "Medium",
+        "question": "What are COMMIT and ROLLBACK in SQL?",
+        "ideal_answer": "COMMIT permanently saves the changes made during a transaction, while ROLLBACK undoes all changes made since the last COMMIT."
+    },
+    {
+        "question_id": "SQL039",
+        "subject": "SQL",
+        "topic": "ACID Properties",
+        "difficulty": "Hard",
+        "question": "Why are ACID properties important in SQL transactions?",
+        "ideal_answer": "ACID properties ensure reliable transactions by maintaining Atomicity, Consistency, Isolation, and Durability, protecting the database from corruption and inconsistent states."
+    },
+    {
+        "question_id": "SQL040",
+        "subject": "SQL",
+        "topic": "SQL Injection",
+        "difficulty": "Hard",
+        "question": "What is SQL Injection and how can it be prevented?",
+        "ideal_answer": "SQL Injection is a security attack where malicious SQL statements are inserted into input fields. It can be prevented using parameterized queries, prepared statements, input validation, and proper access controls."
+    }
+]

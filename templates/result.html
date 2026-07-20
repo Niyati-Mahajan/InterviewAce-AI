@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InterviewAce AI | Final Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="report-body">
+  <div class="app-shell report-shell">
+    <header class="topbar report-topbar">
+      <a class="brand" href="{{ url_for('home') }}">
+        <span class="brand-mark">IA</span>
+        <span>InterviewAce AI</span>
+      </a>
+      <nav class="nav">
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+        <a href="{{ url_for('interview') }}">Interview</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">Dark</button>
+      </nav>
+    </header>
+
+    <main class="page result-page report-page">
+      <div class="page-header report-page-header">
+        <div>
+          <h1>Final Interview Report</h1>
+          <p>Complete AI evaluation across all attempted questions.</p>
+        </div>
+        <div class="result-actions">
+          <a class="button secondary report-action" href="{{ url_for('report_pdf', interview_id=result.interview_id) }}">
+            <span aria-hidden="true">□</span> Download Report PDF
+          </a>
+          {% if result.average_score >= 8 %}
+            <a class="button secondary report-action" href="{{ url_for('certificate_pdf', interview_id=result.interview_id) }}">
+              <span aria-hidden="true">□</span> Download Certificate
+            </a>
+          {% endif %}
+          <a class="button report-action primary" href="{{ url_for('dashboard') }}">
+            <span aria-hidden="true">▶</span> Start New Interview
+          </a>
+        </div>
+      </div>
+
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          <div class="flash-list">
+            {% for category, message in messages %}
+              <div class="flash {{ category }}">{{ message }}</div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% endwith %}
+
+      <section class="report-hero-grid">
+        <article class="report-card professional-score-card">
+          <h2>Professional Score</h2>
+          <div class="report-score-ring" style="--score-percent: {{ result.score_percent }}%;">
+            <div>
+              <strong>{{ "%.1f"|format(result.AI_score) }}</strong>
+              <span>/10</span>
+            </div>
+          </div>
+          <span class="badge {{ result.topic_status_class }}">{{ result.interview_readiness }}</span>
+          <p data-typewriter>{{ result.final_recommendation }}</p>
+        </article>
+
+        <section class="stats-card-grid" aria-label="Interview statistics">
+          <article class="report-card stat-card">
+            <span class="stat-icon" aria-hidden="true">☆</span>
+            <div>
+              <span>Average AI Score</span>
+              <strong>{{ "%.1f"|format(result.average_score) }} / 10</strong>
+            </div>
+          </article>
+          <article class="report-card stat-card">
+            <span class="stat-icon" aria-hidden="true">♕</span>
+            <div>
+              <span>Highest Score</span>
+              <strong>{{ "%.1f"|format(result.highest_score) }} / 10</strong>
+            </div>
+          </article>
+          <article class="report-card stat-card">
+            <span class="stat-icon" aria-hidden="true">⌁</span>
+            <div>
+              <span>Lowest Score</span>
+              <strong>{{ "%.1f"|format(result.lowest_score) }} / 10</strong>
+            </div>
+          </article>
+          <article class="report-card stat-card">
+            <span class="stat-icon" aria-hidden="true">◷</span>
+            <div>
+              <span>Interview Duration</span>
+              <strong>{{ result.duration }}</strong>
+            </div>
+          </article>
+          <article class="report-card stat-card">
+            <span class="stat-icon" aria-hidden="true">☑</span>
+            <div>
+              <span>Questions Attempted</span>
+              <strong>{{ result.questions_attempted }} / {{ result.total_questions }}</strong>
+            </div>
+          </article>
+          <article class="report-card stat-card">
+            <span class="stat-icon" aria-hidden="true">◎</span>
+            <div>
+              <span>Accuracy</span>
+              <strong>{{ result.accuracy }}%</strong>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <section class="report-main-grid">
+        <article class="report-card ai-summary-card">
+          <h2 class="section-title">AI Interview Summary</h2>
+          <div class="summary-score-grid">
+            <div class="summary-metric">
+              <span class="metric-icon">☆</span>
+              <small>Overall Rating</small>
+              <strong>{{ result.overall_ai_feedback.overall_rating }}/10</strong>
+            </div>
+            <div class="summary-metric">
+              <span class="metric-icon">&lt;/&gt;</span>
+              <small>Technical Skills</small>
+              <strong>{{ result.overall_ai_feedback.technical_skills }}%</strong>
+              <div class="mini-progress"><i style="width: {{ result.overall_ai_feedback.technical_skills }}%;"></i></div>
+            </div>
+            <div class="summary-metric">
+              <span class="metric-icon">••</span>
+              <small>Communication</small>
+              <strong>{{ result.overall_ai_feedback.communication }}%</strong>
+              <div class="mini-progress"><i style="width: {{ result.overall_ai_feedback.communication }}%;"></i></div>
+            </div>
+            <div class="summary-metric">
+              <span class="metric-icon">◇</span>
+              <small>Confidence</small>
+              <strong>{{ result.overall_ai_feedback.confidence }}%</strong>
+              <div class="mini-progress"><i style="width: {{ result.overall_ai_feedback.confidence }}%;"></i></div>
+            </div>
+            <div class="summary-metric">
+              <span class="metric-icon">✣</span>
+              <small>Problem Solving</small>
+              <strong>{{ result.overall_ai_feedback.problem_solving }}%</strong>
+              <div class="mini-progress"><i style="width: {{ result.overall_ai_feedback.problem_solving }}%;"></i></div>
+            </div>
+            <div class="summary-metric">
+              <span class="metric-icon">✓</span>
+              <small>Readiness</small>
+              <strong>{{ result.overall_ai_feedback.interview_readiness }}</strong>
+            </div>
+          </div>
+          {% set readiness_status = "Ready" if result.average_score >= 8 else "Needs Improvement" if result.average_score >= 6 else "Not Recommended" %}
+          {% set readiness_class = "ready" if result.average_score >= 8 else "needs-improvement" if result.average_score >= 6 else "not-recommended" %}
+          <section class="readiness-panel">
+            <div class="readiness-panel-head">
+              <span class="metric-icon">âœ“</span>
+              <div>
+                <h3>Interview Readiness</h3>
+                <span class="readiness-badge {{ readiness_class }}">{{ readiness_status }}</span>
+              </div>
+            </div>
+            <p data-typewriter>{{ result.overall_ai_feedback.interview_readiness }}</p>
+          </section>
+        </article>
+
+        <article class="report-card recommendation-panel">
+          <h2 class="section-title">Personalized Recommendations</h2>
+          <div class="recommendation-stack">
+            <div class="recommendation-row">
+              <span class="row-icon" aria-hidden="true">▣</span>
+              <div>
+                <small>Topics to Revise</small>
+                <div class="chip-list">
+                  {% for topic in result.recommendations.topics_to_revise %}
+                    <span class="topic-badge needs-revision">{{ topic }}</span>
+                  {% else %}
+                    <span class="topic-badge strong">No major weak topics</span>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+            <div class="recommendation-row">
+              <span class="row-icon" aria-hidden="true">◷</span>
+              <div>
+                <small>Estimated Study Time</small>
+                <p>{{ result.recommendations.estimated_study_time }}</p>
+              </div>
+            </div>
+            <div class="recommendation-row">
+              <span class="row-icon" aria-hidden="true">☑</span>
+              <div>
+                <small>Practice Questions</small>
+                <ol class="practice-list">
+                  {% for question in result.recommendations.practice_questions_recommendation.split('\n') %}
+                    {% if question.strip() %}
+                      <li data-typewriter>{{ question }}</li>
+                    {% endif %}
+                  {% endfor %}
+                </ol>
+              </div>
+            </div>
+            <div class="recommendation-row">
+              <span class="row-icon" aria-hidden="true">↗</span>
+              <div>
+                <small>Difficulty Recommendation</small>
+                <p data-typewriter>{{ result.recommendations.difficulty_recommendation }}</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="report-insight-grid">
+        <article class="report-card">
+          <h2 class="section-title success-title">Overall Strengths</h2>
+          <div class="strength-grid">
+            {% for item in result.overall_ai_feedback.overall_strengths %}
+              <div class="strength-card"><span aria-hidden="true">✓</span><p>{{ item }}</p></div>
+            {% endfor %}
+          </div>
+        </article>
+
+        <article class="report-card">
+          <h2 class="section-title danger-title">Overall Weaknesses</h2>
+          <div class="weakness-grid">
+            {% for item in result.overall_ai_feedback.overall_weaknesses %}
+              <div class="weakness-card"><span aria-hidden="true">!</span><p>{{ item }}</p></div>
+            {% endfor %}
+          </div>
+        </article>
+
+        <article class="report-card">
+          <h2 class="section-title">Overall AI Feedback</h2>
+          <div class="feedback-list">
+            {% for item in result.overall_ai_feedback.overall_suggestions %}
+              <div class="feedback-callout" data-typewriter>{{ item }}</div>
+            {% endfor %}
+          </div>
+        </article>
+
+        <article class="report-card">
+          <h2 class="section-title">Learning Path</h2>
+          <div class="timeline-list">
+            {% for item in result.recommendations.learning_path %}
+              <div class="timeline-item">
+                <span>{{ loop.index }}</span>
+                <p data-typewriter>{{ item }}</p>
+              </div>
+            {% else %}
+              <div class="timeline-item">
+                <span>1</span>
+                <p data-typewriter>Revise weak topics, practice short answers, and retake a timed interview.</p>
+              </div>
+            {% endfor %}
+          </div>
+        </article>
+      </section>
+
+      <section class="report-card charts-panel">
+        <h2 class="section-title">Interview Analytics</h2>
+        <div class="result-chart-grid">
+          <div class="result-chart-box">
+            <h3>AI Score Per Question</h3>
+            <canvas id="questionScoreChart"></canvas>
+          </div>
+          <div class="result-chart-box">
+            <h3>Interview Skills Radar</h3>
+            <canvas id="skillRadarChart"></canvas>
+          </div>
+          <div class="result-chart-box">
+            <h3>Topics Distribution</h3>
+            <canvas id="topicDoughnutChart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section class="report-card question-section">
+        <h2 class="section-title">Question-wise Report</h2>
+        <div class="question-report-list">
+          {% for item in result.question_reports %}
+            <details class="question-report-card" {% if loop.first %}open{% endif %}>
+              <summary class="question-report-head">
+                <div>
+                  <span>Question {{ item.number }}</span>
+                  <h3>{{ item.question }}</h3>
+                </div>
+                <div class="question-head-actions">
+                  <strong>{{ "%.1f"|format(item.score) }} / 10</strong>
+                  <span class="expand-icon" aria-hidden="true">⌄</span>
+                </div>
+              </summary>
+
+              <div class="question-report-body">
+                <div class="qa-grid">
+                  <div class="answer-box student-answer">
+                    <span>Student Answer</span>
+                    <p>{{ item.student_answer }}</p>
+                  </div>
+                  <div class="answer-box correct-answer">
+                    <span>Correct Answer</span>
+                    <p data-typewriter>{{ item.correct_answer }}</p>
+                  </div>
+                </div>
+
+                <div class="question-metric-grid">
+                  <div class="progress-metric">
+                    <span>Confidence</span>
+                    <strong>{{ item.confidence }}%</strong>
+                    <div class="metric-progress"><i style="width: {{ item.confidence }}%;"></i></div>
+                  </div>
+                  <div class="progress-metric">
+                    <span>Technical Accuracy</span>
+                    <strong>{{ item.technical_accuracy }}%</strong>
+                    <div class="metric-progress"><i style="width: {{ item.technical_accuracy }}%;"></i></div>
+                  </div>
+                  <div class="progress-metric">
+                    <span>Completeness</span>
+                    <strong>{{ item.completeness }}%</strong>
+                    <div class="metric-progress"><i style="width: {{ item.completeness }}%;"></i></div>
+                  </div>
+                </div>
+
+                <div class="qa-grid lower">
+                  <div>
+                    <span>Weak Topics</span>
+                    <div class="chip-list">
+                      {% for concept in item.missing_concepts %}
+                        <em>{{ concept }}</em>
+                      {% else %}
+                        <em>None</em>
+                      {% endfor %}
+                    </div>
+                  </div>
+                  <div>
+                    <span>Suggestions</span>
+                    <ul class="suggestion-list">
+                      {% for suggestion in item.suggestions %}
+                        <li data-typewriter>{{ suggestion }}</li>
+                      {% else %}
+                        <li data-typewriter>Keep practicing similar questions.</li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="question-feedback">
+                  <span>Feedback</span>
+                  <p data-typewriter>
+                    {% for suggestion in item.suggestions %}
+                      {{ suggestion }}
+                    {% else %}
+                      Keep practicing similar questions.
+                    {% endfor %}
+                  </p>
+                </div>
+              </div>
+            </details>
+          {% endfor %}
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script>
+    const questionLabels = {{ result.question_chart_labels|tojson }};
+    const questionScores = {{ result.question_chart_scores|tojson }};
+    const radarLabels = {{ result.radar_labels|tojson }};
+    const radarValues = {{ result.radar_values|tojson }};
+    const topicLabels = {{ result.topic_chart_labels|tojson }};
+    const topicValues = {{ result.topic_chart_values|tojson }};
+
+    const reportGridColor = "rgba(100, 116, 139, 0.18)";
+    const reportTextColor = "#334155";
+
+    new Chart(document.getElementById("questionScoreChart"), {
+      type: "bar",
+      data: {
+        labels: questionLabels,
+        datasets: [{ label: "Score", data: questionScores, backgroundColor: "#2563EB", borderRadius: 8, maxBarThickness: 44 }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: true, labels: { boxWidth: 12, color: reportTextColor } } },
+        scales: {
+          x: { grid: { display: false }, ticks: { color: reportTextColor } },
+          y: { beginAtZero: true, max: 10, grid: { color: reportGridColor }, ticks: { color: reportTextColor } }
+        }
+      }
+    });
+
+    new Chart(document.getElementById("skillRadarChart"), {
+      type: "radar",
+      data: {
+        labels: radarLabels,
+        datasets: [{ label: "Interview Skills", data: radarValues, backgroundColor: "rgba(37,99,235,0.16)", borderColor: "#2563EB", pointBackgroundColor: "#2563EB", pointBorderColor: "#ffffff" }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: { r: { beginAtZero: true, max: 100, grid: { color: reportGridColor }, angleLines: { color: reportGridColor }, pointLabels: { color: reportTextColor }, ticks: { backdropColor: "transparent", color: reportTextColor } } }
+      }
+    });
+
+    new Chart(document.getElementById("topicDoughnutChart"), {
+      type: "doughnut",
+      data: {
+        labels: topicLabels,
+        datasets: [{ data: topicValues, backgroundColor: ["#10B981", "#EF4444"], borderWidth: 0 }]
+      },
+      options: { responsive: true, maintainAspectRatio: false, cutout: "66%", plugins: { legend: { position: "bottom", labels: { color: reportTextColor, boxWidth: 12, padding: 18 } } } }
+    });
+  </script>
+</body>
+</html>

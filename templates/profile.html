@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InterviewAce AI | Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-shell">
+    <header class="dashboard-nav">
+      <a class="dashboard-brand" href="{{ url_for('home') }}">
+        <span class="dashboard-brand-mark">IA</span>
+        <span>InterviewAce AI</span>
+      </a>
+      <nav class="dashboard-links">
+        <a href="{{ url_for('dashboard') }}"><i class="fa-solid fa-chart-line"></i>Dashboard</a>
+        <a class="active" href="{{ url_for('profile') }}"><i class="fa-solid fa-user"></i>Profile</a>
+        <a href="{{ url_for('leaderboard') }}"><i class="fa-solid fa-ranking-star"></i>Leaderboard</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">Dark</button>
+      </nav>
+      <div class="profile-widget">
+        <span>{{ user.name[:1] }}</span>
+        <div>
+          <strong>{{ user.name }}</strong>
+          <small>{{ user.branch }}</small>
+        </div>
+        <a href="{{ url_for('logout') }}" title="Logout"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+      </div>
+    </header>
+
+    <main class="dashboard-page">
+      <section class="profile-hero premium-card">
+        <div class="profile-avatar">{{ user.name[:1] }}</div>
+        <div>
+          <h1>{{ user.name }}</h1>
+          <p>{{ user.email }}</p>
+          <p>{{ user.college }} | {{ user.branch }}</p>
+        </div>
+      </section>
+
+      <section class="premium-metrics">
+        <div class="premium-card metric-card"><span class="metric-icon"><i class="fa-solid fa-layer-group"></i></span><div><small>Total Interviews</small><strong>{{ total_interviews }}</strong></div></div>
+        <div class="premium-card metric-card"><span class="metric-icon"><i class="fa-solid fa-gauge-high"></i></span><div><small>Average Score</small><strong>{{ "%.1f"|format(average_score) }}/10</strong></div></div>
+        <div class="premium-card metric-card"><span class="metric-icon"><i class="fa-solid fa-trophy"></i></span><div><small>Highest Score</small><strong>{{ "%.1f"|format(highest_score) }}/10</strong></div></div>
+        <div class="premium-card metric-card"><span class="metric-icon"><i class="fa-solid fa-certificate"></i></span><div><small>Readiness</small><strong>{{ interview_readiness }}</strong></div></div>
+      </section>
+
+      <section class="result-two-column">
+        <div class="premium-card profile-section">
+          <div class="card-heading"><div><h2>Achievements</h2><p>Badges unlock automatically from your interview history.</p></div><i class="fa-solid fa-medal"></i></div>
+          <div class="achievement-grid">
+            {% for badge in achievements %}
+              <div class="achievement-card {% if badge.unlocked %}unlocked{% endif %}">
+                <i class="fa-solid fa-award"></i>
+                <strong>{{ badge.name }}</strong>
+                <span>{{ "Unlocked" if badge.unlocked else "Locked" }}</span>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="premium-card profile-section">
+          <div class="card-heading"><div><h2>Recent Activity</h2><p>Your latest interview attempts.</p></div><i class="fa-solid fa-clock-rotate-left"></i></div>
+          <div class="weak-topic-list">
+            {% for item in recent_activity %}
+              <div>
+                <strong>{{ item.subject }}</strong>
+                <span>{{ "%.1f"|format(item.score or 0) }}/10</span>
+              </div>
+            {% else %}
+              <div class="empty-state">No recent activity yet.</div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

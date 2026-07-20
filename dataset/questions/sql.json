@@ -1,0 +1,325 @@
+[
+{
+    "question_id": "SQL001",
+    "subject": "SQL",
+    "topic": "Introduction",
+    "difficulty": "Easy",
+    "question": "What is SQL?",
+    "ideal_answer": "SQL (Structured Query Language) is a standard language used to create, retrieve, update, delete, and manage data stored in relational databases."
+},
+{
+    "question_id": "SQL002",
+    "subject": "SQL",
+    "topic": "Commands",
+    "difficulty": "Easy",
+    "question": "What are the different types of SQL commands?",
+    "ideal_answer": "The main types of SQL commands are DDL (Data Definition Language), DML (Data Manipulation Language), DCL (Data Control Language), TCL (Transaction Control Language), and DQL (Data Query Language)."
+},
+{
+    "question_id": "SQL003",
+    "subject": "SQL",
+    "topic": "DDL",
+    "difficulty": "Easy",
+    "question": "What is DDL in SQL?",
+    "ideal_answer": "DDL stands for Data Definition Language. It is used to define and modify database structures using commands such as CREATE, ALTER, DROP, and TRUNCATE."
+},
+{
+    "question_id": "SQL004",
+    "subject": "SQL",
+    "topic": "DML",
+    "difficulty": "Easy",
+    "question": "What is DML in SQL?",
+    "ideal_answer": "DML stands for Data Manipulation Language. It is used to insert, update, delete, and retrieve data using commands like INSERT, UPDATE, DELETE, and SELECT."
+},
+{
+    "question_id": "SQL005",
+    "subject": "SQL",
+    "topic": "SELECT",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the SELECT statement?",
+    "ideal_answer": "The SELECT statement is used to retrieve data from one or more tables in a database."
+},
+{
+    "question_id": "SQL006",
+    "subject": "SQL",
+    "topic": "WHERE Clause",
+    "difficulty": "Easy",
+    "question": "What is the WHERE clause used for?",
+    "ideal_answer": "The WHERE clause filters records based on specified conditions, allowing only matching rows to be returned."
+},
+{
+    "question_id": "SQL007",
+    "subject": "SQL",
+    "topic": "ORDER BY",
+    "difficulty": "Easy",
+    "question": "What is the ORDER BY clause?",
+    "ideal_answer": "The ORDER BY clause is used to sort query results in ascending (ASC) or descending (DESC) order based on one or more columns."
+},
+{
+    "question_id": "SQL008",
+    "subject": "SQL",
+    "topic": "DISTINCT",
+    "difficulty": "Easy",
+    "question": "What is the DISTINCT keyword used for?",
+    "ideal_answer": "The DISTINCT keyword removes duplicate values from the query result and returns only unique records."
+},
+{
+    "question_id": "SQL009",
+    "subject": "SQL",
+    "topic": "Operators",
+    "difficulty": "Easy",
+    "question": "What are comparison operators in SQL?",
+    "ideal_answer": "Comparison operators such as =, !=, <, >, <=, and >= are used to compare values in SQL conditions."
+},
+{
+    "question_id": "SQL010",
+    "subject": "SQL",
+    "topic": "LIKE",
+    "difficulty": "Easy",
+    "question": "What is the LIKE operator in SQL?",
+    "ideal_answer": "The LIKE operator is used for pattern matching in SQL queries, often with wildcard characters such as % and _."
+}
+,
+{
+    "question_id": "SQL011",
+    "subject": "SQL",
+    "topic": "Aggregate Functions",
+    "difficulty": "Easy",
+    "question": "What are aggregate functions in SQL?",
+    "ideal_answer": "Aggregate functions perform calculations on a group of rows and return a single value. Common aggregate functions include COUNT(), SUM(), AVG(), MIN(), and MAX()."
+},
+{
+    "question_id": "SQL012",
+    "subject": "SQL",
+    "topic": "COUNT Function",
+    "difficulty": "Easy",
+    "question": "What is the COUNT() function in SQL?",
+    "ideal_answer": "The COUNT() function returns the total number of rows or non-NULL values that satisfy a specified condition."
+},
+{
+    "question_id": "SQL013",
+    "subject": "SQL",
+    "topic": "SUM Function",
+    "difficulty": "Easy",
+    "question": "What is the SUM() function used for?",
+    "ideal_answer": "The SUM() function calculates the total sum of values in a numeric column."
+},
+{
+    "question_id": "SQL014",
+    "subject": "SQL",
+    "topic": "AVG Function",
+    "difficulty": "Easy",
+    "question": "What is the AVG() function in SQL?",
+    "ideal_answer": "The AVG() function calculates the average value of a numeric column while ignoring NULL values."
+},
+{
+    "question_id": "SQL015",
+    "subject": "SQL",
+    "topic": "MIN and MAX",
+    "difficulty": "Easy",
+    "question": "What are the MIN() and MAX() functions?",
+    "ideal_answer": "MIN() returns the smallest value, while MAX() returns the largest value from a specified column."
+},
+{
+    "question_id": "SQL016",
+    "subject": "SQL",
+    "topic": "GROUP BY",
+    "difficulty": "Medium",
+    "question": "What is the GROUP BY clause?",
+    "ideal_answer": "The GROUP BY clause groups rows that have the same values in specified columns so that aggregate functions can be applied to each group."
+},
+{
+    "question_id": "SQL017",
+    "subject": "SQL",
+    "topic": "HAVING Clause",
+    "difficulty": "Medium",
+    "question": "What is the HAVING clause in SQL?",
+    "ideal_answer": "The HAVING clause filters grouped records after the GROUP BY operation, unlike the WHERE clause which filters rows before grouping."
+},
+{
+    "question_id": "SQL018",
+    "subject": "SQL",
+    "topic": "WHERE vs HAVING",
+    "difficulty": "Medium",
+    "question": "What is the difference between WHERE and HAVING?",
+    "ideal_answer": "WHERE filters individual rows before grouping, while HAVING filters groups after the GROUP BY clause has been applied."
+},
+{
+    "question_id": "SQL019",
+    "subject": "SQL",
+    "topic": "NULL Values",
+    "difficulty": "Medium",
+    "question": "How are NULL values handled in SQL?",
+    "ideal_answer": "NULL represents missing or unknown data. It is checked using IS NULL or IS NOT NULL because it cannot be compared using the equality operator."
+},
+{
+    "question_id": "SQL020",
+    "subject": "SQL",
+    "topic": "Aliases",
+    "difficulty": "Easy",
+    "question": "What is an alias in SQL?",
+    "ideal_answer": "An alias is a temporary name assigned to a table or column using the AS keyword to improve query readability."
+}
+,
+{
+    "question_id": "SQL021",
+    "subject": "SQL",
+    "topic": "INNER JOIN",
+    "difficulty": "Medium",
+    "question": "What is an INNER JOIN in SQL?",
+    "ideal_answer": "An INNER JOIN returns only the rows that have matching values in both tables based on the specified join condition."
+},
+{
+    "question_id": "SQL022",
+    "subject": "SQL",
+    "topic": "LEFT JOIN",
+    "difficulty": "Medium",
+    "question": "What is a LEFT JOIN in SQL?",
+    "ideal_answer": "A LEFT JOIN returns all rows from the left table and the matching rows from the right table. If no match exists, NULL values are returned for the right table."
+},
+{
+    "question_id": "SQL023",
+    "subject": "SQL",
+    "topic": "RIGHT JOIN",
+    "difficulty": "Medium",
+    "question": "What is a RIGHT JOIN in SQL?",
+    "ideal_answer": "A RIGHT JOIN returns all rows from the right table and the matching rows from the left table. If no match exists, NULL values are returned for the left table."
+},
+{
+    "question_id": "SQL024",
+    "subject": "SQL",
+    "topic": "FULL OUTER JOIN",
+    "difficulty": "Hard",
+    "question": "What is a FULL OUTER JOIN in SQL?",
+    "ideal_answer": "A FULL OUTER JOIN returns all matching rows from both tables along with the unmatched rows from both tables, filling missing values with NULL."
+},
+{
+    "question_id": "SQL025",
+    "subject": "SQL",
+    "topic": "CROSS JOIN",
+    "difficulty": "Medium",
+    "question": "What is a CROSS JOIN in SQL?",
+    "ideal_answer": "A CROSS JOIN returns the Cartesian product of two tables, combining every row of the first table with every row of the second table."
+},
+{
+    "question_id": "SQL026",
+    "subject": "SQL",
+    "topic": "SELF JOIN",
+    "difficulty": "Hard",
+    "question": "What is a SELF JOIN in SQL?",
+    "ideal_answer": "A SELF JOIN joins a table with itself using aliases. It is commonly used to compare rows within the same table."
+},
+{
+    "question_id": "SQL027",
+    "subject": "SQL",
+    "topic": "Subqueries",
+    "difficulty": "Medium",
+    "question": "What is a subquery in SQL?",
+    "ideal_answer": "A subquery is a query written inside another SQL query. It is used to retrieve data that is required by the outer query."
+},
+{
+    "question_id": "SQL028",
+    "subject": "SQL",
+    "topic": "Correlated Subqueries",
+    "difficulty": "Hard",
+    "question": "What is a correlated subquery?",
+    "ideal_answer": "A correlated subquery depends on values from the outer query and is executed once for each row processed by the outer query."
+},
+{
+    "question_id": "SQL029",
+    "subject": "SQL",
+    "topic": "UNION",
+    "difficulty": "Medium",
+    "question": "What is the difference between UNION and UNION ALL?",
+    "ideal_answer": "UNION removes duplicate rows from the combined result, whereas UNION ALL includes all rows, including duplicates, making it generally faster."
+},
+{
+    "question_id": "SQL030",
+    "subject": "SQL",
+    "topic": "EXISTS vs IN",
+    "difficulty": "Hard",
+    "question": "What is the difference between EXISTS and IN in SQL?",
+    "ideal_answer": "EXISTS checks whether a subquery returns any rows and stops once a match is found, while IN compares a value against a list of values returned by a subquery."
+}
+,
+{
+    "question_id": "SQL031",
+    "subject": "SQL",
+    "topic": "Views",
+    "difficulty": "Medium",
+    "question": "What is a view in SQL?",
+    "ideal_answer": "A view is a virtual table created from the result of a SQL query. It does not store data itself but displays data from one or more underlying tables."
+},
+{
+    "question_id": "SQL032",
+    "subject": "SQL",
+    "topic": "Indexes",
+    "difficulty": "Medium",
+    "question": "What is an index in SQL?",
+    "ideal_answer": "An index is a database object that improves the speed of data retrieval operations by creating a sorted structure on one or more columns."
+},
+{
+    "question_id": "SQL033",
+    "subject": "SQL",
+    "topic": "Primary Key vs Unique Key",
+    "difficulty": "Medium",
+    "question": "What is the difference between a PRIMARY KEY and a UNIQUE KEY?",
+    "ideal_answer": "A PRIMARY KEY uniquely identifies each row and cannot contain NULL values, whereas a UNIQUE KEY also enforces uniqueness but can allow NULL values depending on the database system."
+},
+{
+    "question_id": "SQL034",
+    "subject": "SQL",
+    "topic": "Stored Procedures",
+    "difficulty": "Medium",
+    "question": "What is a stored procedure?",
+    "ideal_answer": "A stored procedure is a precompiled collection of SQL statements stored in the database that can be executed repeatedly to perform specific tasks."
+},
+{
+    "question_id": "SQL035",
+    "subject": "SQL",
+    "topic": "Functions",
+    "difficulty": "Medium",
+    "question": "What is the difference between a stored procedure and a function?",
+    "ideal_answer": "A stored procedure performs operations and may or may not return a value, whereas a function always returns a value and can often be used within SQL queries."
+},
+{
+    "question_id": "SQL036",
+    "subject": "SQL",
+    "topic": "Triggers",
+    "difficulty": "Medium",
+    "question": "What is a trigger in SQL?",
+    "ideal_answer": "A trigger is a special database object that automatically executes in response to events such as INSERT, UPDATE, or DELETE."
+},
+{
+    "question_id": "SQL037",
+    "subject": "SQL",
+    "topic": "Transactions",
+    "difficulty": "Medium",
+    "question": "What is a transaction in SQL?",
+    "ideal_answer": "A transaction is a sequence of SQL operations executed as a single unit of work. It ensures that either all operations succeed or none of them are applied."
+},
+{
+    "question_id": "SQL038",
+    "subject": "SQL",
+    "topic": "Transaction Control",
+    "difficulty": "Medium",
+    "question": "What are COMMIT and ROLLBACK in SQL?",
+    "ideal_answer": "COMMIT permanently saves the changes made during a transaction, while ROLLBACK undoes all changes made since the last COMMIT."
+},
+{
+    "question_id": "SQL039",
+    "subject": "SQL",
+    "topic": "ACID Properties",
+    "difficulty": "Hard",
+    "question": "Why are ACID properties important in SQL transactions?",
+    "ideal_answer": "ACID properties ensure reliable transactions by maintaining Atomicity, Consistency, Isolation, and Durability, protecting the database from corruption and inconsistent states."
+},
+{
+    "question_id": "SQL040",
+    "subject": "SQL",
+    "topic": "SQL Injection",
+    "difficulty": "Hard",
+    "question": "What is SQL Injection and how can it be prevented?",
+    "ideal_answer": "SQL Injection is a security attack where malicious SQL statements are inserted into input fields. It can be prevented using parameterized queries, prepared statements, input validation, and proper access controls."
+}
+]

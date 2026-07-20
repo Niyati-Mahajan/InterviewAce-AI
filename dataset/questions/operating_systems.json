@@ -1,0 +1,244 @@
+[
+{
+    "question_id": "OS001",
+    "subject": "Operating Systems",
+    "topic": "Introduction",
+    "difficulty": "Easy",
+    "question": "What is an operating system?",
+    "ideal_answer": "An operating system is system software that manages computer hardware and software resources while providing services for application programs."
+},
+{
+    "question_id": "OS002",
+    "subject": "Operating Systems",
+    "topic": "Functions of OS",
+    "difficulty": "Easy",
+    "question": "What are the main functions of an operating system?",
+    "ideal_answer": "The main functions of an operating system include process management, memory management, file management, device management, security, and providing a user interface."
+},
+{
+    "question_id": "OS003",
+    "subject": "Operating Systems",
+    "topic": "Types of Operating Systems",
+    "difficulty": "Easy",
+    "question": "What are the different types of operating systems?",
+    "ideal_answer": "Common types of operating systems include batch operating systems, time-sharing operating systems, distributed operating systems, real-time operating systems, network operating systems, and mobile operating systems."
+},
+{
+    "question_id": "OS004",
+    "subject": "Operating Systems",
+    "topic": "Kernel",
+    "difficulty": "Medium",
+    "question": "What is the kernel in an operating system?",
+    "ideal_answer": "The kernel is the core component of an operating system that manages hardware resources, memory, CPU scheduling, devices, and communication between hardware and software."
+},
+{
+    "question_id": "OS005",
+    "subject": "Operating Systems",
+    "topic": "Shell",
+    "difficulty": "Easy",
+    "question": "What is a shell in an operating system?",
+    "ideal_answer": "A shell is a command interpreter that allows users to interact with the operating system by executing commands and running programs."
+},
+{
+    "question_id": "OS006",
+    "subject": "Operating Systems",
+    "topic": "System Calls",
+    "difficulty": "Medium",
+    "question": "What are system calls?",
+    "ideal_answer": "System calls are interfaces through which user programs request services from the operating system kernel, such as file operations, process creation, and memory management."
+},
+{
+    "question_id": "OS007",
+    "subject": "Operating Systems",
+    "topic": "Program vs Process",
+    "difficulty": "Medium",
+    "question": "What is the difference between a program and a process?",
+    "ideal_answer": "A program is a passive set of instructions stored on disk, whereas a process is an active instance of a program currently being executed."
+},
+{
+    "question_id": "OS008",
+    "subject": "Operating Systems",
+    "topic": "Process Control Block",
+    "difficulty": "Medium",
+    "question": "What is a Process Control Block (PCB)?",
+    "ideal_answer": "A Process Control Block is a data structure maintained by the operating system that stores information about a process, including its state, process ID, registers, scheduling information, and memory details."
+},
+{
+    "question_id": "OS009",
+    "subject": "Operating Systems",
+    "topic": "Multiprogramming",
+    "difficulty": "Medium",
+    "question": "What is multiprogramming?",
+    "ideal_answer": "Multiprogramming is a technique where multiple programs are kept in memory simultaneously so that the CPU can switch between them, improving CPU utilization."
+},
+{
+    "question_id": "OS010",
+    "subject": "Operating Systems",
+    "topic": "Multitasking",
+    "difficulty": "Medium",
+    "question": "What is multitasking?",
+    "ideal_answer": "Multitasking is the ability of an operating system to execute multiple tasks or processes apparently at the same time by rapidly switching the CPU between them."
+}
+,
+{
+    "question_id": "OS011",
+    "subject": "Operating Systems",
+    "topic": "Process States",
+    "difficulty": "Medium",
+    "question": "What are the different states of a process?",
+    "ideal_answer": "A process typically passes through New, Ready, Running, Waiting (Blocked), and Terminated states during its execution."
+},
+{
+    "question_id": "OS012",
+    "subject": "Operating Systems",
+    "topic": "Process Scheduling",
+    "difficulty": "Medium",
+    "question": "What is process scheduling?",
+    "ideal_answer": "Process scheduling is the mechanism used by the operating system to determine which process should execute next on the CPU."
+},
+{
+    "question_id": "OS013",
+    "subject": "Operating Systems",
+    "topic": "FCFS Scheduling",
+    "difficulty": "Easy",
+    "question": "What is First Come First Serve (FCFS) scheduling?",
+    "ideal_answer": "FCFS is a non-preemptive scheduling algorithm in which the process that arrives first is executed first."
+},
+{
+    "question_id": "OS014",
+    "subject": "Operating Systems",
+    "topic": "Shortest Job First",
+    "difficulty": "Medium",
+    "question": "What is Shortest Job First (SJF) scheduling?",
+    "ideal_answer": "SJF is a scheduling algorithm that selects the process with the smallest execution time, reducing average waiting time."
+},
+{
+    "question_id": "OS015",
+    "subject": "Operating Systems",
+    "topic": "Round Robin",
+    "difficulty": "Medium",
+    "question": "What is Round Robin scheduling?",
+    "ideal_answer": "Round Robin is a preemptive scheduling algorithm where each process receives a fixed time slice (time quantum) before the CPU switches to the next process."
+},
+{
+    "question_id": "OS016",
+    "subject": "Operating Systems",
+    "topic": "Priority Scheduling",
+    "difficulty": "Medium",
+    "question": "What is Priority Scheduling?",
+    "ideal_answer": "Priority Scheduling executes processes based on their priority values. Higher-priority processes are executed before lower-priority ones."
+},
+{
+    "question_id": "OS017",
+    "subject": "Operating Systems",
+    "topic": "Threads",
+    "difficulty": "Medium",
+    "question": "What is a thread?",
+    "ideal_answer": "A thread is the smallest unit of execution within a process. Multiple threads of the same process share memory and resources."
+},
+{
+    "question_id": "OS018",
+    "subject": "Operating Systems",
+    "topic": "Context Switching",
+    "difficulty": "Hard",
+    "question": "What is context switching?",
+    "ideal_answer": "Context switching is the process of saving the state of one running process or thread and restoring the state of another so the CPU can switch execution."
+},
+{
+    "question_id": "OS019",
+    "subject": "Operating Systems",
+    "topic": "Critical Section",
+    "difficulty": "Hard",
+    "question": "What is a critical section?",
+    "ideal_answer": "A critical section is a part of a program where shared resources are accessed. Only one process or thread should execute it at a time to prevent race conditions."
+},
+{
+    "question_id": "OS020",
+    "subject": "Operating Systems",
+    "topic": "Process Synchronization",
+    "difficulty": "Hard",
+    "question": "Why is process synchronization necessary?",
+    "ideal_answer": "Process synchronization ensures that multiple processes or threads access shared resources safely, preventing race conditions, inconsistent data, and resource conflicts."
+}
+,
+{
+    "question_id": "OS021",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "What is memory management in an operating system?",
+    "ideal_answer": "Memory management is the function of an operating system that allocates, tracks, and deallocates memory efficiently among processes while ensuring protection and optimal utilization."
+},
+{
+    "question_id": "OS022",
+    "subject": "Operating Systems",
+    "topic": "Paging",
+    "difficulty": "Medium",
+    "question": "What is paging?",
+    "ideal_answer": "Paging is a memory management technique in which logical memory is divided into fixed-size pages and physical memory into frames, eliminating external fragmentation."
+},
+{
+    "question_id": "OS023",
+    "subject": "Operating Systems",
+    "topic": "Segmentation",
+    "difficulty": "Medium",
+    "question": "What is segmentation?",
+    "ideal_answer": "Segmentation is a memory management technique that divides memory into variable-sized logical segments such as code, data, and stack based on program structure."
+},
+{
+    "question_id": "OS024",
+    "subject": "Operating Systems",
+    "topic": "Virtual Memory",
+    "difficulty": "Hard",
+    "question": "What is virtual memory?",
+    "ideal_answer": "Virtual memory is a memory management technique that uses secondary storage to extend RAM, allowing programs larger than physical memory to execute efficiently."
+},
+{
+    "question_id": "OS025",
+    "subject": "Operating Systems",
+    "topic": "Thrashing",
+    "difficulty": "Hard",
+    "question": "What is thrashing in an operating system?",
+    "ideal_answer": "Thrashing occurs when the operating system spends more time swapping pages between RAM and disk than executing processes, causing severe performance degradation."
+},
+{
+    "question_id": "OS026",
+    "subject": "Operating Systems",
+    "topic": "Cache Memory",
+    "difficulty": "Medium",
+    "question": "What is cache memory?",
+    "ideal_answer": "Cache memory is a small, high-speed memory located close to the CPU that stores frequently accessed data and instructions to reduce access time."
+},
+{
+    "question_id": "OS027",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "difficulty": "Medium",
+    "question": "What is a file system?",
+    "ideal_answer": "A file system is the method used by an operating system to organize, store, retrieve, and manage files on storage devices."
+},
+{
+    "question_id": "OS028",
+    "subject": "Operating Systems",
+    "topic": "Disk Scheduling",
+    "difficulty": "Hard",
+    "question": "Why is disk scheduling required?",
+    "ideal_answer": "Disk scheduling optimizes the order of disk access requests to reduce seek time, improve throughput, and enhance overall system performance."
+},
+{
+    "question_id": "OS029",
+    "subject": "Operating Systems",
+    "topic": "Booting Process",
+    "difficulty": "Medium",
+    "question": "What is the booting process?",
+    "ideal_answer": "Booting is the process of starting a computer by loading the operating system from storage into main memory so it can begin execution."
+},
+{
+    "question_id": "OS030",
+    "subject": "Operating Systems",
+    "topic": "Linux vs Windows",
+    "difficulty": "Medium",
+    "question": "What are the major differences between Linux and Windows operating systems?",
+    "ideal_answer": "Linux is open-source, highly customizable, and widely used for servers and development, whereas Windows is proprietary, user-friendly, and commonly used on personal computers."
+}
+]

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InterviewAce AI | Interview</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="{{ url_for('home') }}">
+        <span class="brand-mark">IA</span>
+        <span>InterviewAce AI</span>
+      </a>
+      <nav class="nav">
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+        <a href="{{ url_for('result') }}">Result</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">Dark</button>
+      </nav>
+    </header>
+
+    <main class="page">
+      <div class="page-header">
+        <div>
+          <h1>Interview Page</h1>
+          <p>{{ question.subject }} | {{ question.difficulty }}</p>
+        </div>
+        <a class="button secondary" href="{{ url_for('dashboard') }}">Change Subject</a>
+      </div>
+
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          <div class="flash-list">
+            {% for category, message in messages %}
+              <div class="flash {{ category }}">{{ message }}</div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% endwith %}
+
+      <section class="interview-layout">
+        <form
+          class="workspace-panel interview-card-panel"
+          method="post"
+          action="{{ url_for('interview') }}"
+          data-interview-form
+          data-remaining-seconds="{{ remaining_seconds }}"
+        >
+          <div class="interview-progress-head">
+            <div>
+              <span>Question {{ current_question }} of {{ total_questions }}</span>
+              <strong>{{ progress_percent }}% Complete</strong>
+            </div>
+            <div class="timer-pill" data-countdown-timer>20:00</div>
+          </div>
+
+          <div class="question-progress-track" aria-label="Interview progress">
+            <div style="width: {{ progress_percent }}%;"></div>
+          </div>
+
+          <h2 class="section-title">Question</h2>
+          <div class="question-box">{{ question.question }}</div>
+
+          <input type="hidden" name="question_id" value="{{ question.question_id }}">
+          <input type="hidden" name="time_up" value="0" data-time-up-field>
+
+          <div class="field" style="margin-top: 18px;">
+            <label for="answer">Your Answer</label>
+            <textarea id="answer" name="student_answer" placeholder="Type your answer here..." required></textarea>
+          </div>
+
+          <div class="button-row">
+            <button type="submit">
+              {% if current_question == total_questions %}
+                Submit & Finish
+              {% else %}
+                Submit & Next
+              {% endif %}
+            </button>
+          </div>
+
+          <div class="ai-loader" data-ai-loader role="status" aria-live="polite" hidden>
+            <div class="ai-loader-spinner"></div>
+            <strong>AI is evaluating your answer...</strong>
+            <div class="ai-loader-track"><span></span></div>
+          </div>
+        </form>
+
+        <aside class="workspace-panel">
+          <h2 class="section-title">Session</h2>
+          <div class="history-list">
+            <div class="history-item"><strong>Subject</strong><span>{{ question.subject }}</span></div>
+            <div class="history-item"><strong>Difficulty</strong><span>{{ question.difficulty }}</span></div>
+            <div class="history-item"><strong>Progress</strong><span>{{ answered_count }}/{{ total_questions }} answered</span></div>
+            <div class="history-item"><strong>AI Check</strong><span>Gemini</span></div>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

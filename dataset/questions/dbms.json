@@ -1,0 +1,406 @@
+[
+{
+    "question_id": "DB001",
+    "subject": "DBMS",
+    "topic": "Introduction",
+    "difficulty": "Easy",
+    "question": "What is a DBMS?",
+    "ideal_answer": "A Database Management System (DBMS) is software that allows users to create, store, retrieve, update, and manage data efficiently while ensuring security, consistency, and integrity."
+},
+{
+    "question_id": "DB002",
+    "subject": "DBMS",
+    "topic": "Introduction",
+    "difficulty": "Easy",
+    "question": "What are the advantages of using a DBMS?",
+    "ideal_answer": "A DBMS provides data security, reduced redundancy, improved data consistency, backup and recovery, data sharing, concurrency control, and efficient data management."
+},
+{
+    "question_id": "DB003",
+    "subject": "DBMS",
+    "topic": "File System vs DBMS",
+    "difficulty": "Easy",
+    "question": "What is the difference between a file system and a DBMS?",
+    "ideal_answer": "A file system stores data in separate files with higher redundancy and lower security, whereas a DBMS organizes data systematically with reduced redundancy, better security, concurrency control, and data integrity."
+},
+{
+    "question_id": "DB004",
+    "subject": "DBMS",
+    "topic": "Database",
+    "difficulty": "Easy",
+    "question": "What is a database?",
+    "ideal_answer": "A database is an organized collection of related data that can be easily accessed, managed, and updated."
+},
+{
+    "question_id": "DB005",
+    "subject": "DBMS",
+    "topic": "Schema",
+    "difficulty": "Easy",
+    "question": "What is a database schema?",
+    "ideal_answer": "A database schema is the logical structure of a database that defines tables, attributes, relationships, and constraints."
+},
+{
+    "question_id": "DB006",
+    "subject": "DBMS",
+    "topic": "Instances",
+    "difficulty": "Easy",
+    "question": "What is the difference between a database schema and a database instance?",
+    "ideal_answer": "A schema is the overall design of the database, while an instance is the actual data stored in the database at a particular point in time."
+},
+{
+    "question_id": "DB007",
+    "subject": "DBMS",
+    "topic": "Three-Level Architecture",
+    "difficulty": "Medium",
+    "question": "Explain the three-level architecture of DBMS.",
+    "ideal_answer": "The three-level architecture consists of the external level (user view), conceptual level (logical structure), and internal level (physical storage), providing data abstraction and independence."
+},
+{
+    "question_id": "DB008",
+    "subject": "DBMS",
+    "topic": "Data Independence",
+    "difficulty": "Medium",
+    "question": "What is data independence?",
+    "ideal_answer": "Data independence is the ability to modify the schema at one level without affecting the schema at the next higher level. It includes logical and physical data independence."
+},
+{
+    "question_id": "DB009",
+    "subject": "DBMS",
+    "topic": "Database Languages",
+    "difficulty": "Medium",
+    "question": "What are DDL, DML, DCL, and TCL?",
+    "ideal_answer": "DDL defines database structure, DML manipulates data, DCL controls user permissions, and TCL manages transactions using commands like COMMIT and ROLLBACK."
+},
+{
+    "question_id": "DB010",
+    "subject": "DBMS",
+    "topic": "Database Users",
+    "difficulty": "Easy",
+    "question": "Who are the different types of database users?",
+    "ideal_answer": "Database users include database administrators (DBA), application programmers, end users, system analysts, and database designers."
+}
+,
+{
+    "question_id": "DB011",
+    "subject": "DBMS",
+    "topic": "ER Model",
+    "difficulty": "Easy",
+    "question": "What is an Entity in the ER model?",
+    "ideal_answer": "An entity is a real-world object or concept that can be uniquely identified and about which data is stored in a database."
+},
+{
+    "question_id": "DB012",
+    "subject": "DBMS",
+    "topic": "ER Model",
+    "difficulty": "Easy",
+    "question": "What is an attribute in the ER model?",
+    "ideal_answer": "An attribute is a property or characteristic of an entity. For example, StudentID and Name are attributes of a Student entity."
+},
+{
+    "question_id": "DB013",
+    "subject": "DBMS",
+    "topic": "ER Model",
+    "difficulty": "Easy",
+    "question": "What is a relationship in the ER model?",
+    "ideal_answer": "A relationship represents an association between two or more entities, such as a Student enrolling in a Course."
+},
+{
+    "question_id": "DB014",
+    "subject": "DBMS",
+    "topic": "Keys",
+    "difficulty": "Easy",
+    "question": "What is a primary key?",
+    "ideal_answer": "A primary key is a column or set of columns that uniquely identifies each record in a table. It cannot contain NULL values or duplicate values."
+},
+{
+    "question_id": "DB015",
+    "subject": "DBMS",
+    "topic": "Keys",
+    "difficulty": "Easy",
+    "question": "What is a foreign key?",
+    "ideal_answer": "A foreign key is a column that establishes a relationship between two tables by referring to the primary key of another table."
+},
+{
+    "question_id": "DB016",
+    "subject": "DBMS",
+    "topic": "Keys",
+    "difficulty": "Medium",
+    "question": "What is the difference between a primary key and a foreign key?",
+    "ideal_answer": "A primary key uniquely identifies records in its own table, whereas a foreign key references the primary key of another table to establish relationships."
+},
+{
+    "question_id": "DB017",
+    "subject": "DBMS",
+    "topic": "Keys",
+    "difficulty": "Medium",
+    "question": "What is a candidate key?",
+    "ideal_answer": "A candidate key is a minimal set of attributes that can uniquely identify each record in a table. One candidate key is selected as the primary key."
+},
+{
+    "question_id": "DB018",
+    "subject": "DBMS",
+    "topic": "Keys",
+    "difficulty": "Medium",
+    "question": "What is a composite key?",
+    "ideal_answer": "A composite key is a key formed by combining two or more columns to uniquely identify a record in a table."
+},
+{
+    "question_id": "DB019",
+    "subject": "DBMS",
+    "topic": "Constraints",
+    "difficulty": "Medium",
+    "question": "What are constraints in DBMS?",
+    "ideal_answer": "Constraints are rules applied to database tables to maintain data accuracy and integrity. Common constraints include PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK, and DEFAULT."
+},
+{
+    "question_id": "DB020",
+    "subject": "DBMS",
+    "topic": "Relationships",
+    "difficulty": "Medium",
+    "question": "What are the different types of relationships in DBMS?",
+    "ideal_answer": "The main types of relationships are one-to-one, one-to-many, many-to-one, and many-to-many."
+}
+,
+{
+    "question_id": "DB021",
+    "subject": "DBMS",
+    "topic": "Functional Dependency",
+    "difficulty": "Medium",
+    "question": "What is a functional dependency?",
+    "ideal_answer": "A functional dependency is a relationship between two attributes in which one attribute uniquely determines another. It is represented as X → Y."
+},
+{
+    "question_id": "DB022",
+    "subject": "DBMS",
+    "topic": "Functional Dependency",
+    "difficulty": "Medium",
+    "question": "What is a trivial functional dependency?",
+    "ideal_answer": "A functional dependency is trivial if the dependent attribute is a subset of the determinant. For example, {A, B} → A."
+},
+{
+    "question_id": "DB023",
+    "subject": "DBMS",
+    "topic": "Functional Dependency",
+    "difficulty": "Medium",
+    "question": "What is a non-trivial functional dependency?",
+    "ideal_answer": "A functional dependency is non-trivial if the dependent attribute is not a subset of the determinant. For example, StudentID → StudentName."
+},
+{
+    "question_id": "DB024",
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "Easy",
+    "question": "What is normalization?",
+    "ideal_answer": "Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity by dividing tables into smaller related tables."
+},
+{
+    "question_id": "DB025",
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "Easy",
+    "question": "Why is normalization important?",
+    "ideal_answer": "Normalization reduces data redundancy, prevents update anomalies, improves consistency, and enhances database efficiency."
+},
+{
+    "question_id": "DB026",
+    "subject": "DBMS",
+    "topic": "First Normal Form",
+    "difficulty": "Medium",
+    "question": "What is the First Normal Form (1NF)?",
+    "ideal_answer": "A table is in First Normal Form if each column contains atomic values, there are no repeating groups, and each record is unique."
+},
+{
+    "question_id": "DB027",
+    "subject": "DBMS",
+    "topic": "Second Normal Form",
+    "difficulty": "Medium",
+    "question": "What is the Second Normal Form (2NF)?",
+    "ideal_answer": "A table is in Second Normal Form if it is already in 1NF and every non-key attribute is fully functionally dependent on the entire primary key."
+},
+{
+    "question_id": "DB028",
+    "subject": "DBMS",
+    "topic": "Third Normal Form",
+    "difficulty": "Medium",
+    "question": "What is the Third Normal Form (3NF)?",
+    "ideal_answer": "A table is in Third Normal Form if it is already in 2NF and contains no transitive dependencies between non-key attributes."
+},
+{
+    "question_id": "DB029",
+    "subject": "DBMS",
+    "topic": "BCNF",
+    "difficulty": "Hard",
+    "question": "What is Boyce-Codd Normal Form (BCNF)?",
+    "ideal_answer": "A table is in BCNF if it is in 3NF and every determinant is a candidate key, eliminating certain anomalies not handled by 3NF."
+},
+{
+    "question_id": "DB030",
+    "subject": "DBMS",
+    "topic": "Denormalization",
+    "difficulty": "Hard",
+    "question": "What is denormalization and when is it used?",
+    "ideal_answer": "Denormalization is the process of combining normalized tables to improve query performance. It is used in read-intensive applications where faster retrieval is more important than minimizing redundancy."
+}
+,
+{
+    "question_id": "DB031",
+    "subject": "DBMS",
+    "topic": "Transactions",
+    "difficulty": "Easy",
+    "question": "What is a transaction in DBMS?",
+    "ideal_answer": "A transaction is a sequence of one or more database operations executed as a single logical unit of work. It either completes entirely or is rolled back if an error occurs."
+},
+{
+    "question_id": "DB032",
+    "subject": "DBMS",
+    "topic": "ACID Properties",
+    "difficulty": "Medium",
+    "question": "What are the ACID properties of a transaction?",
+    "ideal_answer": "ACID stands for Atomicity, Consistency, Isolation, and Durability. These properties ensure reliable and consistent execution of database transactions."
+},
+{
+    "question_id": "DB033",
+    "subject": "DBMS",
+    "topic": "Atomicity",
+    "difficulty": "Medium",
+    "question": "What is Atomicity in DBMS?",
+    "ideal_answer": "Atomicity ensures that all operations in a transaction are completed successfully. If any operation fails, the entire transaction is rolled back."
+},
+{
+    "question_id": "DB034",
+    "subject": "DBMS",
+    "topic": "Consistency",
+    "difficulty": "Medium",
+    "question": "What is Consistency in DBMS?",
+    "ideal_answer": "Consistency ensures that a transaction brings the database from one valid state to another while maintaining all integrity constraints."
+},
+{
+    "question_id": "DB035",
+    "subject": "DBMS",
+    "topic": "Isolation",
+    "difficulty": "Medium",
+    "question": "What is Isolation in DBMS?",
+    "ideal_answer": "Isolation ensures that multiple transactions executing simultaneously do not interfere with each other and produce the same result as if executed sequentially."
+},
+{
+    "question_id": "DB036",
+    "subject": "DBMS",
+    "topic": "Durability",
+    "difficulty": "Medium",
+    "question": "What is Durability in DBMS?",
+    "ideal_answer": "Durability guarantees that once a transaction is committed, its changes are permanently stored even if a system failure occurs."
+},
+{
+    "question_id": "DB037",
+    "subject": "DBMS",
+    "topic": "Transaction Control",
+    "difficulty": "Medium",
+    "question": "What are COMMIT, ROLLBACK, and SAVEPOINT?",
+    "ideal_answer": "COMMIT permanently saves transaction changes, ROLLBACK undoes changes since the last commit, and SAVEPOINT creates a checkpoint within a transaction for partial rollback."
+},
+{
+    "question_id": "DB038",
+    "subject": "DBMS",
+    "topic": "Concurrency Control",
+    "difficulty": "Hard",
+    "question": "What is concurrency control in DBMS?",
+    "ideal_answer": "Concurrency control is the process of managing simultaneous transactions to prevent conflicts and maintain database consistency."
+},
+{
+    "question_id": "DB039",
+    "subject": "DBMS",
+    "topic": "Concurrency Problems",
+    "difficulty": "Hard",
+    "question": "What is a dirty read in DBMS?",
+    "ideal_answer": "A dirty read occurs when a transaction reads data that has been modified by another transaction but has not yet been committed."
+},
+{
+    "question_id": "DB040",
+    "subject": "DBMS",
+    "topic": "Concurrency Problems",
+    "difficulty": "Hard",
+    "question": "What is the lost update problem?",
+    "ideal_answer": "The lost update problem occurs when two transactions update the same data simultaneously and one update overwrites the other, causing data loss."
+}
+,
+{
+    "question_id": "DB041",
+    "subject": "DBMS",
+    "topic": "Locking",
+    "difficulty": "Hard",
+    "question": "What is locking in DBMS?",
+    "ideal_answer": "Locking is a concurrency control mechanism that restricts simultaneous access to database resources, preventing data inconsistency when multiple transactions execute concurrently."
+},
+{
+    "question_id": "DB042",
+    "subject": "DBMS",
+    "topic": "Two-Phase Locking",
+    "difficulty": "Hard",
+    "question": "What is the Two-Phase Locking (2PL) protocol?",
+    "ideal_answer": "Two-Phase Locking is a concurrency control protocol consisting of a growing phase where locks are acquired and a shrinking phase where locks are released, ensuring serializability."
+},
+{
+    "question_id": "DB043",
+    "subject": "DBMS",
+    "topic": "Deadlock",
+    "difficulty": "Hard",
+    "question": "What is a deadlock in DBMS?",
+    "ideal_answer": "A deadlock occurs when two or more transactions wait indefinitely for each other to release resources, preventing further execution."
+},
+{
+    "question_id": "DB044",
+    "subject": "DBMS",
+    "topic": "Starvation",
+    "difficulty": "Hard",
+    "question": "What is starvation in DBMS?",
+    "ideal_answer": "Starvation occurs when a transaction waits indefinitely because other transactions continuously receive higher priority and access to required resources."
+},
+{
+    "question_id": "DB045",
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "question": "What is an index in DBMS?",
+    "ideal_answer": "An index is a data structure that improves the speed of data retrieval operations by providing quick access to rows in a table."
+},
+{
+    "question_id": "DB046",
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Hard",
+    "question": "What is the difference between clustered and non-clustered indexes?",
+    "ideal_answer": "A clustered index determines the physical order of data in a table, whereas a non-clustered index creates a separate structure that points to the actual data rows."
+},
+{
+    "question_id": "DB047",
+    "subject": "DBMS",
+    "topic": "Views",
+    "difficulty": "Medium",
+    "question": "What is a view in DBMS?",
+    "ideal_answer": "A view is a virtual table created from one or more tables using a SQL query. It does not store data itself but displays data from underlying tables."
+},
+{
+    "question_id": "DB048",
+    "subject": "DBMS",
+    "topic": "Stored Procedures",
+    "difficulty": "Medium",
+    "question": "What is a stored procedure?",
+    "ideal_answer": "A stored procedure is a precompiled collection of SQL statements stored in the database that can be executed repeatedly to perform specific tasks."
+},
+{
+    "question_id": "DB049",
+    "subject": "DBMS",
+    "topic": "Triggers",
+    "difficulty": "Medium",
+    "question": "What is a trigger in DBMS?",
+    "ideal_answer": "A trigger is a special type of stored procedure that automatically executes in response to database events such as INSERT, UPDATE, or DELETE."
+},
+{
+    "question_id": "DB050",
+    "subject": "DBMS",
+    "topic": "SQL Joins",
+    "difficulty": "Medium",
+    "question": "What are SQL joins and why are they used?",
+    "ideal_answer": "SQL joins are operations used to combine rows from two or more tables based on a related column. Common types include INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN."
+}
+]

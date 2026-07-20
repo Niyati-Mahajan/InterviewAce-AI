@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InterviewAce AI | Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="{{ url_for('home') }}">
+        <span class="brand-mark">IA</span>
+        <span>InterviewAce AI</span>
+      </a>
+      <nav class="nav">
+        <a href="{{ url_for('welcome') }}">Welcome</a>
+        <a href="{{ url_for('login') }}">Login</a>
+        <a href="{{ url_for('register') }}">Register</a>
+        <a class="button" href="{{ url_for('dashboard') }}">Start Interview</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="hero-copy">
+        <h1>Practice interviews with sharper feedback.</h1>
+        <p>Prepare for technical and aptitude interviews with guided questions, clean progress tracking, and focused improvement suggestions.</p>
+        <div class="hero-actions">
+          <a class="button" href="{{ url_for('welcome') }}">Welcome</a>
+          <a class="button secondary" href="{{ url_for('login') }}">Login</a>
+        </div>
+      </section>
+
+      <aside class="hero-panel">
+        <div class="mock-window">
+          <div class="mock-header">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="mock-body">
+            <div class="question-preview">Explain the difference between a stack and a queue with one real-world example.</div>
+            <div class="metric-row">
+              <div class="metric">
+                <strong>82%</strong>
+                <span>Accuracy</span>
+              </div>
+              <div class="metric">
+                <strong>14</strong>
+                <span>Sessions</span>
+              </div>
+              <div class="metric">
+                <strong>6</strong>
+                <span>Weak Topics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>

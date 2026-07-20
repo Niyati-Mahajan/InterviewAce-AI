@@ -1,0 +1,244 @@
+[
+{
+    "question_id": "OOP001",
+    "subject": "OOP",
+    "topic": "Introduction",
+    "difficulty": "Easy",
+    "question": "What is Object-Oriented Programming (OOP)?",
+    "ideal_answer": "Object-Oriented Programming (OOP) is a programming paradigm based on objects and classes. It focuses on organizing code using concepts such as encapsulation, inheritance, polymorphism, and abstraction."
+},
+{
+    "question_id": "OOP002",
+    "subject": "OOP",
+    "topic": "Class",
+    "difficulty": "Easy",
+    "question": "What is a class?",
+    "ideal_answer": "A class is a blueprint or template for creating objects. It defines the data members and member functions that objects of the class will have."
+},
+{
+    "question_id": "OOP003",
+    "subject": "OOP",
+    "topic": "Object",
+    "difficulty": "Easy",
+    "question": "What is an object?",
+    "ideal_answer": "An object is an instance of a class. It has its own state, behavior, and identity."
+},
+{
+    "question_id": "OOP004",
+    "subject": "OOP",
+    "topic": "Encapsulation",
+    "difficulty": "Medium",
+    "question": "What is encapsulation?",
+    "ideal_answer": "Encapsulation is the process of bundling data and methods into a single unit while restricting direct access to internal data using access modifiers."
+},
+{
+    "question_id": "OOP005",
+    "subject": "OOP",
+    "topic": "Abstraction",
+    "difficulty": "Medium",
+    "question": "What is abstraction?",
+    "ideal_answer": "Abstraction is the process of hiding implementation details and exposing only essential features to the user."
+},
+{
+    "question_id": "OOP006",
+    "subject": "OOP",
+    "topic": "Inheritance",
+    "difficulty": "Medium",
+    "question": "What is inheritance?",
+    "ideal_answer": "Inheritance is an OOP feature that allows one class to inherit the properties and methods of another class, promoting code reuse."
+},
+{
+    "question_id": "OOP007",
+    "subject": "OOP",
+    "topic": "Polymorphism",
+    "difficulty": "Medium",
+    "question": "What is polymorphism?",
+    "ideal_answer": "Polymorphism allows the same interface or method to perform different behaviors depending on the object or class."
+},
+{
+    "question_id": "OOP008",
+    "subject": "OOP",
+    "topic": "Constructor",
+    "difficulty": "Easy",
+    "question": "What is a constructor?",
+    "ideal_answer": "A constructor is a special method that is automatically called when an object is created. It is used to initialize object data."
+},
+{
+    "question_id": "OOP009",
+    "subject": "OOP",
+    "topic": "Destructor",
+    "difficulty": "Medium",
+    "question": "What is a destructor?",
+    "ideal_answer": "A destructor is a special method that is automatically called when an object is destroyed. It is used to release resources occupied by the object."
+},
+{
+    "question_id": "OOP010",
+    "subject": "OOP",
+    "topic": "Access Modifiers",
+    "difficulty": "Medium",
+    "question": "What are access modifiers in object-oriented programming?",
+    "ideal_answer": "Access modifiers control the visibility of class members. Common access modifiers are public, private, and protected."
+}
+,
+{
+    "question_id": "OOP011",
+    "subject": "OOP",
+    "topic": "Method Overloading",
+    "difficulty": "Medium",
+    "question": "What is method overloading?",
+    "ideal_answer": "Method overloading is the process of defining multiple methods with the same name but different parameter lists in the same class. It is an example of compile-time polymorphism."
+},
+{
+    "question_id": "OOP012",
+    "subject": "OOP",
+    "topic": "Method Overriding",
+    "difficulty": "Medium",
+    "question": "What is method overriding?",
+    "ideal_answer": "Method overriding occurs when a subclass provides its own implementation of a method already defined in the parent class. It is an example of runtime polymorphism."
+},
+{
+    "question_id": "OOP013",
+    "subject": "OOP",
+    "topic": "Overloading vs Overriding",
+    "difficulty": "Medium",
+    "question": "What is the difference between method overloading and method overriding?",
+    "ideal_answer": "Method overloading occurs within the same class and differs by parameters, while method overriding occurs in inheritance where a child class redefines a parent class method."
+},
+{
+    "question_id": "OOP014",
+    "subject": "OOP",
+    "topic": "Static Keyword",
+    "difficulty": "Medium",
+    "question": "What is the static keyword in object-oriented programming?",
+    "ideal_answer": "The static keyword is used for members that belong to the class rather than individual objects. Static members are shared among all instances of the class."
+},
+{
+    "question_id": "OOP015",
+    "subject": "OOP",
+    "topic": "Final Keyword",
+    "difficulty": "Medium",
+    "question": "What is the purpose of the final keyword?",
+    "ideal_answer": "The final keyword is used to prevent modification. A final variable cannot be reassigned, a final method cannot be overridden, and a final class cannot be inherited."
+},
+{
+    "question_id": "OOP016",
+    "subject": "OOP",
+    "topic": "Abstract Class",
+    "difficulty": "Hard",
+    "question": "What is an abstract class?",
+    "ideal_answer": "An abstract class is a class that cannot be instantiated directly. It may contain both abstract methods and concrete methods and serves as a base class for subclasses."
+},
+{
+    "question_id": "OOP017",
+    "subject": "OOP",
+    "topic": "Interface",
+    "difficulty": "Hard",
+    "question": "What is an interface?",
+    "ideal_answer": "An interface is a contract that specifies methods a class must implement. It supports abstraction and enables multiple inheritance of behavior in languages such as Java."
+},
+{
+    "question_id": "OOP018",
+    "subject": "OOP",
+    "topic": "Abstract Class vs Interface",
+    "difficulty": "Hard",
+    "question": "What is the difference between an abstract class and an interface?",
+    "ideal_answer": "An abstract class can have both implemented and abstract methods along with instance variables, whereas an interface primarily defines a contract of methods that implementing classes must provide."
+},
+{
+    "question_id": "OOP019",
+    "subject": "OOP",
+    "topic": "Association",
+    "difficulty": "Medium",
+    "question": "What is association in object-oriented programming?",
+    "ideal_answer": "Association is a relationship between two independent objects where they can interact with each other without ownership."
+},
+{
+    "question_id": "OOP020",
+    "subject": "OOP",
+    "topic": "Aggregation",
+    "difficulty": "Hard",
+    "question": "What is aggregation in object-oriented programming?",
+    "ideal_answer": "Aggregation is a weak 'has-a' relationship where one object contains another object, but the contained object can exist independently of the container."
+}
+,
+{
+    "question_id": "OOP021",
+    "subject": "OOP",
+    "topic": "Composition",
+    "difficulty": "Hard",
+    "question": "What is composition in object-oriented programming?",
+    "ideal_answer": "Composition is a strong 'has-a' relationship where one object owns another object, and the contained object's lifecycle depends on the container object."
+},
+{
+    "question_id": "OOP022",
+    "subject": "OOP",
+    "topic": "Aggregation vs Composition",
+    "difficulty": "Hard",
+    "question": "What is the difference between aggregation and composition?",
+    "ideal_answer": "Aggregation is a weak relationship where the contained object can exist independently, whereas composition is a strong relationship where the contained object's lifecycle depends on the parent object."
+},
+{
+    "question_id": "OOP023",
+    "subject": "OOP",
+    "topic": "Dynamic Binding",
+    "difficulty": "Hard",
+    "question": "What is dynamic binding?",
+    "ideal_answer": "Dynamic binding is the process of resolving method calls at runtime rather than compile time. It is used in method overriding and runtime polymorphism."
+},
+{
+    "question_id": "OOP024",
+    "subject": "OOP",
+    "topic": "Polymorphism",
+    "difficulty": "Medium",
+    "question": "What is the difference between compile-time and runtime polymorphism?",
+    "ideal_answer": "Compile-time polymorphism is achieved through method overloading and is resolved during compilation, whereas runtime polymorphism is achieved through method overriding and is resolved during program execution."
+},
+{
+    "question_id": "OOP025",
+    "subject": "OOP",
+    "topic": "this Keyword",
+    "difficulty": "Medium",
+    "question": "What is the purpose of the 'this' keyword?",
+    "ideal_answer": "The 'this' keyword refers to the current object of a class. It is used to access instance variables, invoke constructors, and distinguish between instance variables and method parameters."
+},
+{
+    "question_id": "OOP026",
+    "subject": "OOP",
+    "topic": "super Keyword",
+    "difficulty": "Medium",
+    "question": "What is the purpose of the 'super' keyword?",
+    "ideal_answer": "The 'super' keyword refers to the immediate parent class. It is used to access parent class methods, variables, and constructors."
+},
+{
+    "question_id": "OOP027",
+    "subject": "OOP",
+    "topic": "Upcasting and Downcasting",
+    "difficulty": "Hard",
+    "question": "What are upcasting and downcasting?",
+    "ideal_answer": "Upcasting is converting a child class object to a parent class reference, while downcasting converts a parent class reference back to a child class reference."
+},
+{
+    "question_id": "OOP028",
+    "subject": "OOP",
+    "topic": "Object Cloning",
+    "difficulty": "Hard",
+    "question": "What is object cloning?",
+    "ideal_answer": "Object cloning is the process of creating an exact copy of an existing object. In Java, it is commonly implemented using the Cloneable interface and clone() method."
+},
+{
+    "question_id": "OOP029",
+    "subject": "OOP",
+    "topic": "SOLID Principles",
+    "difficulty": "Hard",
+    "question": "What are the SOLID principles in object-oriented programming?",
+    "ideal_answer": "SOLID is a set of five object-oriented design principles: Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion. They help create maintainable and scalable software."
+},
+{
+    "question_id": "OOP030",
+    "subject": "OOP",
+    "topic": "OOP vs Procedural Programming",
+    "difficulty": "Medium",
+    "question": "What is the difference between object-oriented programming and procedural programming?",
+    "ideal_answer": "Object-oriented programming organizes code around objects and classes with features like inheritance and polymorphism, whereas procedural programming organizes code around functions and procedures with a step-by-step approach."
+}
+]

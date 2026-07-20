@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InterviewAce AI | Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-shell">
+    <header class="dashboard-nav">
+      <a class="dashboard-brand" href="{{ url_for('home') }}">
+        <span class="dashboard-brand-mark">IA</span>
+        <span>InterviewAce AI</span>
+      </a>
+
+      <nav class="dashboard-links">
+        <a href="{{ url_for('home') }}"><i class="fa-solid fa-house"></i>Home</a>
+        <a class="active" href="{{ url_for('dashboard') }}"><i class="fa-solid fa-chart-line"></i>Dashboard</a>
+        <a href="{{ url_for('profile') }}"><i class="fa-solid fa-user"></i>Profile</a>
+        <a href="{{ url_for('leaderboard') }}"><i class="fa-solid fa-ranking-star"></i>Leaderboard</a>
+        <a href="{{ url_for('interview') }}"><i class="fa-solid fa-microphone-lines"></i>Interview</a>
+        <a href="{{ url_for('result') }}"><i class="fa-solid fa-square-poll-vertical"></i>Result</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">Dark</button>
+      </nav>
+
+      <div class="profile-widget">
+        <span>{{ user_name[:1] }}</span>
+        <div>
+          <strong>{{ user_name }}</strong>
+          <small>AI Interview Learner</small>
+        </div>
+        <a href="{{ url_for('logout') }}" title="Logout"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+      </div>
+    </header>
+
+    <main class="dashboard-page">
+      <section class="dashboard-hero">
+        <div>
+          <span class="eyebrow"><i class="fa-solid fa-wand-magic-sparkles"></i>AI-powered preparation</span>
+          <h1>Welcome back, {{ user_name }}</h1>
+          <p>Track interview performance, discover weak areas, and start a focused mock session in seconds.</p>
+        </div>
+        <a class="hero-action" href="{{ url_for('interview') }}">
+          <i class="fa-solid fa-play"></i>
+          Practice Now
+        </a>
+      </section>
+
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          <div class="flash-list">
+            {% for category, message in messages %}
+              <div class="flash {{ category }}">{{ message }}</div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% endwith %}
+
+      <section class="premium-metrics">
+        <div class="premium-card metric-card">
+          <span class="metric-icon"><i class="fa-solid fa-layer-group"></i></span>
+          <div>
+            <small>Total Interviews</small>
+            <strong>{{ total_interviews }}</strong>
+          </div>
+        </div>
+        <div class="premium-card metric-card">
+          <span class="metric-icon"><i class="fa-solid fa-gauge-high"></i></span>
+          <div>
+            <small>Average Score</small>
+            <strong>{{ "%.1f"|format(average_score) }}/10</strong>
+          </div>
+        </div>
+        <div class="premium-card metric-card">
+          <span class="metric-icon"><i class="fa-solid fa-trophy"></i></span>
+          <div>
+            <small>Highest Score</small>
+            <strong>{{ "%.1f"|format(highest_score) }}/10</strong>
+          </div>
+        </div>
+        <div class="premium-card metric-card">
+          <span class="metric-icon"><i class="fa-solid fa-arrow-trend-down"></i></span>
+          <div>
+            <small>Lowest Score</small>
+            <strong>{{ "%.1f"|format(lowest_score) }}/10</strong>
+          </div>
+        </div>
+        <div class="premium-card metric-card">
+          <span class="metric-icon"><i class="fa-solid fa-bullseye"></i></span>
+          <div>
+            <small>Accuracy</small>
+            <strong>{{ accuracy }}%</strong>
+          </div>
+        </div>
+        <div class="premium-card metric-card">
+          <span class="metric-icon"><i class="fa-solid fa-circle-question"></i></span>
+          <div>
+            <small>Questions Attempted</small>
+            <strong>{{ questions_attempted }}</strong>
+          </div>
+        </div>
+        <div class="premium-card metric-card">
+          <span class="metric-icon"><i class="fa-solid fa-clock"></i></span>
+          <div>
+            <small>Average Duration</small>
+            <strong>{{ average_duration }}</strong>
+          </div>
+        </div>
+        <div class="premium-card metric-card">
+          <span class="metric-icon"><i class="fa-solid fa-fire"></i></span>
+          <div>
+            <small>Strongest Subject</small>
+            <strong>{{ strongest_subject }}</strong>
+          </div>
+        </div>
+        <div class="premium-card metric-card">
+          <span class="metric-icon"><i class="fa-solid fa-triangle-exclamation"></i></span>
+          <div>
+            <small>Weakest Subject</small>
+            <strong>{{ weakest_subject }}</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-main-grid">
+        <form class="premium-card start-card" method="get" action="{{ url_for('interview') }}">
+          <div class="card-heading">
+            <div>
+              <h2>Start New Interview</h2>
+              <p>Choose a topic and difficulty for a focused mock round.</p>
+            </div>
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+
+          <div class="premium-form-grid">
+            <label>
+              <span>Subject</span>
+              <select name="subject">
+                <option>Python</option>
+                <option>DBMS</option>
+                <option>SQL</option>
+                <option>OOP</option>
+                <option>OS</option>
+              </select>
+            </label>
+            <label>
+              <span>Difficulty</span>
+              <select name="difficulty">
+                <option>Easy</option>
+                <option>Medium</option>
+                <option>Hard</option>
+              </select>
+            </label>
+          </div>
+
+          <button class="premium-cta" type="submit">
+            <i class="fa-solid fa-play"></i>
+            Start Interview
+          </button>
+        </form>
+
+        <aside class="premium-card insights-card">
+          <div class="card-heading">
+            <div>
+              <h2>AI Insights</h2>
+              <p>Personalized guidance from your latest sessions.</p>
+            </div>
+            <i class="fa-solid fa-brain"></i>
+          </div>
+
+          <div class="insight-grid">
+            <div><span>Strongest Subject</span><strong>{{ strongest_subject }}</strong></div>
+            <div><span>Weakest Subject</span><strong>{{ weakest_subject }}</strong></div>
+            <div><span>AI Confidence</span><strong>{{ ai_confidence }}%</strong></div>
+          </div>
+
+          <div class="recommendation-list">
+            {% for recommendation in recommendations %}
+              <div><i class="fa-solid fa-lightbulb"></i>{{ recommendation }}</div>
+            {% endfor %}
+          </div>
+        </aside>
+      </section>
+
+      <section class="analytics-grid">
+        <div class="premium-card subject-card">
+          <div class="card-heading">
+            <div>
+              <h2>Subject Performance</h2>
+              <p>Animated progress by subject.</p>
+            </div>
+            <i class="fa-solid fa-bars-progress"></i>
+          </div>
+
+          <div class="premium-bars">
+            {% for row in performance %}
+              <div class="premium-bar-row">
+                <div class="bar-label">
+                  <span>{{ row.subject }}</span>
+                  <span>Avg {{ "%.1f"|format(row.avg_score) }}/10</span>
+                </div>
+                <div class="premium-track">
+                  <div class="premium-fill" style="width: {{ row.percent }}%"></div>
+                </div>
+                <div class="subject-meta-row">
+                  <span>{{ row.interview_count }} interviews</span>
+                  <span>Best {{ "%.1f"|format(row.best_score) }}/10</span>
+                </div>
+              </div>
+            {% else %}
+              <div class="empty-state">No performance data yet. Start an interview to see progress here.</div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="premium-card chart-card">
+          <div class="card-heading">
+            <div>
+              <h2>Analytics</h2>
+              <p>Score distribution and subject comparison.</p>
+            </div>
+            <i class="fa-solid fa-chart-pie"></i>
+          </div>
+          <div class="chart-grid">
+            <div class="chart-box"><canvas id="scoreDoughnut"></canvas></div>
+            <div class="chart-box"><canvas id="subjectBar"></canvas></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="analytics-grid">
+        <div class="premium-card chart-card trend-card">
+          <div class="card-heading">
+            <div>
+              <h2>Performance Trend</h2>
+              <p>Interview number vs average score.</p>
+            </div>
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <div class="chart-box trend-chart-box"><canvas id="performanceTrend"></canvas></div>
+        </div>
+
+        <div class="premium-card weak-topic-card">
+          <div class="card-heading">
+            <div>
+              <h2>Most Frequently Missed Topics</h2>
+              <p>Sorted by repeated mistakes across all interviews.</p>
+            </div>
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+          </div>
+
+          <div class="weak-topic-list">
+            {% for item in weak_topics %}
+              <div>
+                <strong>{{ item.topic }}</strong>
+                <span>{{ item.count }} mistakes</span>
+              </div>
+            {% else %}
+              <div class="empty-state">No missed topics found yet.</div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section class="premium-card recent-card">
+        <div class="card-heading">
+          <div>
+            <h2>Recent Interview History</h2>
+            <p>Every interview appears here. Click a card to open the full report.</p>
+          </div>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+        </div>
+
+        <div class="recent-grid">
+          {% for row in history %}
+            <a class="interview-card" href="{{ url_for('result', interview_id=row.interview_id) }}">
+              <div>
+                <strong>Interview #{{ row.interview_id }}</strong>
+                <span>{{ row.difficulty }} difficulty</span>
+              </div>
+              <div class="interview-meta">
+                <span><i class="fa-solid fa-book-open"></i>{{ row.subject }}</span>
+                <span><i class="fa-solid fa-star"></i>{{ "%.1f"|format(row.score) }}/10</span>
+                <span><i class="fa-regular fa-calendar"></i>{{ row.date.strftime("%d %b %Y") if row.date else "Recent" }}</span>
+                <span><i class="fa-solid fa-circle-question"></i>{{ row.questions_attempted }} questions</span>
+                <span><i class="fa-solid fa-clock"></i>{{ row.duration }}</span>
+              </div>
+              <span class="status-badge {{ row.status|lower|replace(' ', '-') }}">{{ row.status }}</span>
+            </a>
+          {% else %}
+            <div class="empty-state">No interviews completed yet.</div>
+          {% endfor %}
+        </div>
+      </section>
+    </main>
+
+    <footer class="dashboard-footer">
+      <span>InterviewAce AI</span>
+      <span>Practice smarter. Improve faster. Interview with confidence.</span>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script>
+    const chartLabels = {{ chart_labels|tojson }};
+    const chartValues = {{ chart_values|tojson }};
+    const trendLabels = {{ trend_labels|tojson }};
+    const trendValues = {{ trend_values|tojson }};
+    const hasChartData = chartLabels.length > 0;
+    const fallbackLabels = hasChartData ? chartLabels : ["No data"];
+    const fallbackValues = hasChartData ? chartValues : [100];
+
+    new Chart(document.getElementById("scoreDoughnut"), {
+      type: "doughnut",
+      data: {
+        labels: fallbackLabels,
+        datasets: [{
+          data: fallbackValues,
+          backgroundColor: hasChartData ? ["#2563EB", "#14A38B", "#F4A11F", "#8B5CF6", "#EF4444"] : ["#DCE2EE"],
+          borderWidth: 0
+        }]
+      },
+      options: {
+        cutout: "72%",
+        plugins: { legend: { position: "bottom", labels: { boxWidth: 10, usePointStyle: true } } },
+        responsive: true,
+        maintainAspectRatio: false
+      }
+    });
+
+    new Chart(document.getElementById("subjectBar"), {
+      type: "bar",
+      data: {
+        labels: fallbackLabels,
+        datasets: [{
+          label: "Performance %",
+          data: fallbackValues,
+          backgroundColor: "#2563EB",
+          borderRadius: 8
+        }]
+      },
+      options: {
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { beginAtZero: true, max: 100, grid: { color: "#EEF2F7" } },
+          x: { grid: { display: false } }
+        },
+        responsive: true,
+        maintainAspectRatio: false
+      }
+    });
+
+    new Chart(document.getElementById("performanceTrend"), {
+      type: "line",
+      data: {
+        labels: trendLabels.length ? trendLabels : ["No data"],
+        datasets: [{
+          label: "Average Score",
+          data: trendValues.length ? trendValues : [0],
+          borderColor: "#2563EB",
+          backgroundColor: "rgba(37, 99, 235, 0.14)",
+          fill: true,
+          tension: 0.35,
+          pointRadius: 5,
+          pointHoverRadius: 7
+        }]
+      },
+      options: {
+        animation: { duration: 900, easing: "easeOutQuart" },
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { beginAtZero: true, max: 10, grid: { color: "#EEF2F7" } },
+          x: { grid: { display: false } }
+        },
+        responsive: true,
+        maintainAspectRatio: false
+      }
+    });
+  </script>
+</body>
+</html>

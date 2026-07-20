@@ -1,0 +1,405 @@
+[
+  {
+    "question_id": "PY001",
+    "subject": "Python",
+    "topic": "Basics",
+    "difficulty": "Easy",
+    "question": "What is Python?",
+    "ideal_answer": "Python is a high-level, interpreted, object-oriented programming language known for its simple syntax and extensive libraries. It is widely used for web development, machine learning, automation, scripting, and data analysis."
+  },
+  {
+    "question_id": "PY002",
+    "subject": "Python",
+    "topic": "Basics",
+    "difficulty": "Easy",
+    "question": "What are the main features of Python?",
+    "ideal_answer": "Python is easy to learn, interpreted, dynamically typed, platform-independent, object-oriented, open source, and has a large standard library."
+  },
+  {
+    "question_id": "PY003",
+    "subject": "Python",
+    "topic": "Variables",
+    "difficulty": "Easy",
+    "question": "What is a variable in Python?",
+    "ideal_answer": "A variable is a name used to store data in memory. Python automatically determines the data type based on the assigned value."
+  },
+  {
+    "question_id": "PY004",
+    "subject": "Python",
+    "topic": "Data Types",
+    "difficulty": "Easy",
+    "question": "Name the built-in data types in Python.",
+    "ideal_answer": "Python provides int, float, complex, bool, str, list, tuple, set, dict, bytes, bytearray, frozenset and NoneType."
+  },
+  {
+    "question_id": "PY005",
+    "subject": "Python",
+    "topic": "Operators",
+    "difficulty": "Easy",
+    "question": "What is the difference between = and == in Python?",
+    "ideal_answer": "The '=' operator assigns a value to a variable, whereas '==' compares two values and returns True if they are equal."
+  },
+  {
+    "question_id": "PY006",
+    "subject": "Python",
+    "topic": "Conditional Statements",
+    "difficulty": "Easy",
+    "question": "Explain the use of if-elif-else statements.",
+    "ideal_answer": "The if-elif-else structure is used for decision making. It executes different blocks of code depending on whether specified conditions evaluate to True or False."
+  },
+  {
+    "question_id": "PY007",
+    "subject": "Python",
+    "topic": "Loops",
+    "difficulty": "Easy",
+    "question": "What is the difference between for and while loops?",
+    "ideal_answer": "A for loop iterates over a sequence or iterable, while a while loop continues executing as long as a given condition remains True."
+  },
+  {
+    "question_id": "PY008",
+    "subject": "Python",
+    "topic": "Functions",
+    "difficulty": "Easy",
+    "question": "What is a function in Python?",
+    "ideal_answer": "A function is a reusable block of code that performs a specific task. Functions help improve code readability and reduce repetition."
+  },
+  {
+    "question_id": "PY009",
+    "subject": "Python",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "question": "What is a string in Python?",
+    "ideal_answer": "A string is a sequence of Unicode characters enclosed in single, double, or triple quotes. Strings are immutable in Python."
+  },
+  {
+    "question_id": "PY010",
+    "subject": "Python",
+    "topic": "Lists",
+    "difficulty": "Easy",
+    "question": "What is a list in Python?",
+    "ideal_answer": "A list is an ordered, mutable collection that can store elements of different data types. Lists are created using square brackets."
+  },
+{
+    "question_id": "PY011",
+    "subject": "Python",
+    "topic": "Tuples",
+    "difficulty": "Easy",
+    "question": "What is a tuple in Python?",
+    "ideal_answer": "A tuple is an ordered and immutable collection of elements. It is created using parentheses and can store different data types."
+},
+{
+    "question_id": "PY012",
+    "subject": "Python",
+    "topic": "Sets",
+    "difficulty": "Easy",
+    "question": "What is a set in Python?",
+    "ideal_answer": "A set is an unordered collection of unique elements. It does not allow duplicate values and is created using curly braces or the set() function."
+},
+{
+    "question_id": "PY013",
+    "subject": "Python",
+    "topic": "Dictionary",
+    "difficulty": "Easy",
+    "question": "What is a dictionary in Python?",
+    "ideal_answer": "A dictionary is a mutable collection of key-value pairs. Each key must be unique, and values are accessed using their corresponding keys."
+},
+{
+    "question_id": "PY014",
+    "subject": "Python",
+    "topic": "Functions",
+    "difficulty": "Medium",
+    "question": "What is the difference between parameters and arguments?",
+    "ideal_answer": "Parameters are variables defined in a function declaration, while arguments are the actual values passed to the function when it is called."
+},
+{
+    "question_id": "PY015",
+    "subject": "Python",
+    "topic": "Lambda Functions",
+    "difficulty": "Medium",
+    "question": "What is a lambda function in Python?",
+    "ideal_answer": "A lambda function is a small anonymous function defined using the lambda keyword. It can take multiple arguments but contains only one expression."
+},
+{
+    "question_id": "PY016",
+    "subject": "Python",
+    "topic": "List Comprehension",
+    "difficulty": "Medium",
+    "question": "What is list comprehension?",
+    "ideal_answer": "List comprehension is a concise way to create lists using a single line of code by combining loops and conditional statements."
+},
+{
+    "question_id": "PY017",
+    "subject": "Python",
+    "topic": "Modules",
+    "difficulty": "Medium",
+    "question": "What is a module in Python?",
+    "ideal_answer": "A module is a Python file containing functions, classes, and variables that can be imported and reused in other Python programs."
+},
+{
+    "question_id": "PY018",
+    "subject": "Python",
+    "topic": "Packages",
+    "difficulty": "Medium",
+    "question": "What is a package in Python?",
+    "ideal_answer": "A package is a collection of related Python modules organized in directories. It helps structure large projects and promotes code reusability."
+},
+{
+    "question_id": "PY019",
+    "subject": "Python",
+    "topic": "File Handling",
+    "difficulty": "Medium",
+    "question": "How do you open a file in Python?",
+    "ideal_answer": "A file can be opened using the open() function by specifying the file name and mode such as read, write, append, or binary."
+},
+{
+    "question_id": "PY020",
+    "subject": "Python",
+    "topic": "Exception Handling",
+    "difficulty": "Medium",
+    "question": "Why is exception handling used in Python?",
+    "ideal_answer": "Exception handling is used to handle runtime errors gracefully using try, except, else, and finally blocks, preventing the program from crashing."
+}
+,
+{
+    "question_id": "PY021",
+    "subject": "Python",
+    "topic": "Exception Handling",
+    "difficulty": "Medium",
+    "question": "What is the difference between syntax errors and exceptions?",
+    "ideal_answer": "Syntax errors occur when Python code violates language rules and prevent execution, while exceptions are runtime errors that occur during program execution and can be handled using exception handling."
+},
+{
+    "question_id": "PY022",
+    "subject": "Python",
+    "topic": "Object-Oriented Programming",
+    "difficulty": "Medium",
+    "question": "What is a class in Python?",
+    "ideal_answer": "A class is a blueprint for creating objects. It defines attributes and methods that describe the behavior and properties of objects."
+},
+{
+    "question_id": "PY023",
+    "subject": "Python",
+    "topic": "Object-Oriented Programming",
+    "difficulty": "Medium",
+    "question": "What is an object in Python?",
+    "ideal_answer": "An object is an instance of a class. It contains its own data and can use the methods defined in its class."
+},
+{
+    "question_id": "PY024",
+    "subject": "Python",
+    "topic": "Object-Oriented Programming",
+    "difficulty": "Medium",
+    "question": "What is inheritance in Python?",
+    "ideal_answer": "Inheritance is an OOP concept where one class acquires the properties and methods of another class, promoting code reuse."
+},
+{
+    "question_id": "PY025",
+    "subject": "Python",
+    "topic": "Object-Oriented Programming",
+    "difficulty": "Medium",
+    "question": "What is polymorphism in Python?",
+    "ideal_answer": "Polymorphism allows the same method or interface to behave differently depending on the object or class that implements it."
+},
+{
+    "question_id": "PY026",
+    "subject": "Python",
+    "topic": "Object-Oriented Programming",
+    "difficulty": "Medium",
+    "question": "What is encapsulation in Python?",
+    "ideal_answer": "Encapsulation is the process of bundling data and methods inside a class while restricting direct access to some internal details."
+},
+{
+    "question_id": "PY027",
+    "subject": "Python",
+    "topic": "Object-Oriented Programming",
+    "difficulty": "Medium",
+    "question": "What is abstraction in Python?",
+    "ideal_answer": "Abstraction hides implementation details and exposes only essential features using abstract classes and methods."
+},
+{
+    "question_id": "PY028",
+    "subject": "Python",
+    "topic": "Constructors",
+    "difficulty": "Medium",
+    "question": "What is the purpose of the __init__() method?",
+    "ideal_answer": "The __init__() method is a constructor that is automatically called when an object is created. It initializes the object's attributes."
+},
+{
+    "question_id": "PY029",
+    "subject": "Python",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "What is garbage collection in Python?",
+    "ideal_answer": "Garbage collection is the automatic process of freeing memory occupied by objects that are no longer in use."
+},
+{
+    "question_id": "PY030",
+    "subject": "Python",
+    "topic": "Virtual Environment",
+    "difficulty": "Medium",
+    "question": "Why are virtual environments used in Python?",
+    "ideal_answer": "Virtual environments create isolated Python environments for different projects, allowing separate dependency management without conflicts."
+}
+,
+{
+    "question_id": "PY031",
+    "subject": "Python",
+    "topic": "Iterators",
+    "difficulty": "Hard",
+    "question": "What is an iterator in Python?",
+    "ideal_answer": "An iterator is an object that allows sequential traversal of elements. It implements the __iter__() and __next__() methods."
+},
+{
+    "question_id": "PY032",
+    "subject": "Python",
+    "topic": "Generators",
+    "difficulty": "Hard",
+    "question": "What is a generator in Python?",
+    "ideal_answer": "A generator is a special type of iterator created using the yield keyword. It generates values lazily, reducing memory usage."
+},
+{
+    "question_id": "PY033",
+    "subject": "Python",
+    "topic": "Decorators",
+    "difficulty": "Hard",
+    "question": "What is a decorator in Python?",
+    "ideal_answer": "A decorator is a function that modifies or extends the behavior of another function without changing its source code. It is applied using the @ syntax."
+},
+{
+    "question_id": "PY034",
+    "subject": "Python",
+    "topic": "*args and **kwargs",
+    "difficulty": "Hard",
+    "question": "What are *args and **kwargs in Python?",
+    "ideal_answer": "*args allows a function to accept a variable number of positional arguments, while **kwargs allows a variable number of keyword arguments."
+},
+{
+    "question_id": "PY035",
+    "subject": "Python",
+    "topic": "Map Function",
+    "difficulty": "Hard",
+    "question": "What is the purpose of the map() function?",
+    "ideal_answer": "The map() function applies a specified function to every item of an iterable and returns an iterator containing the results."
+},
+{
+    "question_id": "PY036",
+    "subject": "Python",
+    "topic": "Filter Function",
+    "difficulty": "Hard",
+    "question": "What is the filter() function used for?",
+    "ideal_answer": "The filter() function filters elements from an iterable based on a condition and returns only those elements that satisfy the condition."
+},
+{
+    "question_id": "PY037",
+    "subject": "Python",
+    "topic": "Reduce Function",
+    "difficulty": "Hard",
+    "question": "What is the reduce() function in Python?",
+    "ideal_answer": "The reduce() function applies a function cumulatively to the items of an iterable to produce a single result. It is available in the functools module."
+},
+{
+    "question_id": "PY038",
+    "subject": "Python",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "What is multithreading in Python?",
+    "ideal_answer": "Multithreading is a technique that allows multiple threads to run concurrently within a single process, improving responsiveness for I/O-bound tasks."
+},
+{
+    "question_id": "PY039",
+    "subject": "Python",
+    "topic": "Multiprocessing",
+    "difficulty": "Hard",
+    "question": "What is multiprocessing in Python?",
+    "ideal_answer": "Multiprocessing allows multiple processes to run in parallel, enabling better utilization of multiple CPU cores for CPU-intensive tasks."
+},
+{
+    "question_id": "PY040",
+    "subject": "Python",
+    "topic": "GIL",
+    "difficulty": "Hard",
+    "question": "What is the Global Interpreter Lock (GIL) in Python?",
+    "ideal_answer": "The Global Interpreter Lock is a mechanism in CPython that allows only one thread to execute Python bytecode at a time, limiting true parallel execution of threads."
+}
+,
+{
+    "question_id": "PY041",
+    "subject": "Python",
+    "topic": "Copying Objects",
+    "difficulty": "Hard",
+    "question": "What is the difference between shallow copy and deep copy in Python?",
+    "ideal_answer": "A shallow copy creates a new object but copies references to nested objects, while a deep copy recursively copies all nested objects, creating completely independent copies."
+},
+{
+    "question_id": "PY042",
+    "subject": "Python",
+    "topic": "Comparison Operators",
+    "difficulty": "Hard",
+    "question": "What is the difference between == and is in Python?",
+    "ideal_answer": "The == operator compares the values of two objects, whereas the is operator checks whether two variables refer to the same object in memory."
+},
+{
+    "question_id": "PY043",
+    "subject": "Python",
+    "topic": "Mutable and Immutable Objects",
+    "difficulty": "Hard",
+    "question": "What are mutable and immutable objects in Python?",
+    "ideal_answer": "Mutable objects can be modified after creation, such as lists and dictionaries, whereas immutable objects cannot be changed after creation, such as strings, tuples, and integers."
+},
+{
+    "question_id": "PY044",
+    "subject": "Python",
+    "topic": "Exception Handling",
+    "difficulty": "Hard",
+    "question": "What is the purpose of the finally block in exception handling?",
+    "ideal_answer": "The finally block contains code that always executes whether an exception occurs or not. It is commonly used for resource cleanup such as closing files or database connections."
+},
+{
+    "question_id": "PY045",
+    "subject": "Python",
+    "topic": "Memory Management",
+    "difficulty": "Hard",
+    "question": "How does Python manage memory?",
+    "ideal_answer": "Python manages memory automatically using reference counting and a garbage collector to reclaim memory occupied by unused objects."
+},
+{
+    "question_id": "PY046",
+    "subject": "Python",
+    "topic": "PEP 8",
+    "difficulty": "Medium",
+    "question": "What is PEP 8?",
+    "ideal_answer": "PEP 8 is the official Python style guide that provides coding conventions for writing clean, readable, and consistent Python code."
+},
+{
+    "question_id": "PY047",
+    "subject": "Python",
+    "topic": "Function Arguments",
+    "difficulty": "Hard",
+    "question": "How are arguments passed to functions in Python?",
+    "ideal_answer": "Python passes arguments using object references, often described as pass-by-object-reference or pass-by-assignment. The behavior depends on whether the object is mutable or immutable."
+},
+{
+    "question_id": "PY048",
+    "subject": "Python",
+    "topic": "Data Structures",
+    "difficulty": "Medium",
+    "question": "What is the difference between a list and a tuple?",
+    "ideal_answer": "Lists are mutable and can be modified after creation, while tuples are immutable and generally provide better performance and can be used as dictionary keys if they contain immutable elements."
+},
+{
+    "question_id": "PY049",
+    "subject": "Python",
+    "topic": "Python Applications",
+    "difficulty": "Easy",
+    "question": "What are some common applications of Python?",
+    "ideal_answer": "Python is widely used in web development, data science, artificial intelligence, machine learning, automation, scripting, cybersecurity, scientific computing, and software development."
+},
+{
+    "question_id": "PY050",
+    "subject": "Python",
+    "topic": "Advantages",
+    "difficulty": "Easy",
+    "question": "What are the main advantages of Python?",
+    "ideal_answer": "Python is easy to learn, has simple syntax, is platform-independent, supports object-oriented programming, has a large standard library, and offers a rich ecosystem of third-party packages."
+}
+]

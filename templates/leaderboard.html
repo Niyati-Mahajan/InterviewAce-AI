@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InterviewAce AI | Leaderboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-shell">
+    <header class="dashboard-nav">
+      <a class="dashboard-brand" href="{{ url_for('home') }}">
+        <span class="dashboard-brand-mark">IA</span>
+        <span>InterviewAce AI</span>
+      </a>
+      <nav class="dashboard-links">
+        <a href="{{ url_for('dashboard') }}"><i class="fa-solid fa-chart-line"></i>Dashboard</a>
+        <a href="{{ url_for('profile') }}"><i class="fa-solid fa-user"></i>Profile</a>
+        <a class="active" href="{{ url_for('leaderboard') }}"><i class="fa-solid fa-ranking-star"></i>Leaderboard</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">Dark</button>
+      </nav>
+    </header>
+
+    <main class="dashboard-page">
+      <section class="dashboard-hero">
+        <div>
+          <span class="eyebrow"><i class="fa-solid fa-ranking-star"></i>Top performers</span>
+          <h1>Leaderboard</h1>
+          <p>Top 10 interview scores across InterviewAce AI.</p>
+        </div>
+      </section>
+
+      <section class="premium-card leaderboard-card">
+        <div class="leaderboard-row header">
+          <span>Rank</span>
+          <span>Student</span>
+          <span>Subject</span>
+          <span>Average Score</span>
+          <span>Date</span>
+        </div>
+        {% for row in leaders %}
+          <div class="leaderboard-row">
+            <span>#{{ row.rank }}</span>
+            <strong>{{ row.student }}</strong>
+            <span>{{ row.subject }}</span>
+            <span>{{ "%.1f"|format(row.average_score or 0) }}/10</span>
+            <span>{{ row.date.strftime("%d %b %Y") if row.date else "Recent" }}</span>
+          </div>
+        {% else %}
+          <div class="empty-state">No leaderboard data yet.</div>
+        {% endfor %}
+      </section>
+    </main>
+  </div>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
